@@ -136,9 +136,14 @@ class Llama2Model(ModelBase):
         return model
 
     def _load_tokenizer(self, model_path):
-        pretrained_model_path = "meta-llama/Llama-2-7b-chat-hf"
-        tokenizer = AutoTokenizer.from_pretrained("/home/users/yanzeyu/.cache/modelscope/hub/models/modelscope/Llama-2-7b-chat-ms",
-    local_files_only=True)
+        # Load tokenizer from model_path (same dir as the fine-tuned model).
+        # Tokenizer files are bundled in models_finetune/tofu_llama2_7b,
+        # so no separate base-model path is needed on a new server.
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_path,
+            local_files_only=True,
+            trust_remote_code=True,
+        )
 
         tokenizer.padding_side = "left"
         tokenizer.padding_size = "longest"  # NEW

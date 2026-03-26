@@ -10,7 +10,6 @@ models_finetune/
 __pycache__/
 .venv/
 checkpoints/
-dataset/
 logs/
 outputs/
 run_results/
@@ -42,3 +41,27 @@ Miniconda3-latest-Linux-x86_64.sh
 *.out
 *.fdb_latexmk
 *.synctex.gz
+
+# =========================
+# 6. 模型权重大文件
+# =========================
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.gguf
+
+# =========================
+# 7. 原始数据集下载
+# =========================
+dataset/tofu_raw/
+
+# =========================
+# 8. 密钥 / 证书 (绝对不能提交)
+# =========================
+*.pem
+*.key
+*.env
+.env*
+private_key*
+*_key.pem
