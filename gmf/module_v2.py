@@ -166,7 +166,9 @@ class ODETransport(nn.Module):
 
     @property
     def step_size(self) -> torch.Tensor:
-        return self.log_step.exp().clamp(1e-3, 2.0)
+        # Clamp to (0, 1]: step_size=1.0 means "move all the way to attractor"
+        # step_size=0.5 means "move halfway"
+        return self.log_step.exp().clamp(1e-3, 1.0)
 
     def forward(
         self,
@@ -176,6 +178,17 @@ class ODETransport(nn.Module):
     ) -> torch.Tensor:
         """
         Transport x toward attractor_mu.
+
+        Uses NORMALIZED velocity so step_size is scale-invariant:
+            velocity_hat = (mu_a - a) / ||mu_a - a||   (unit direction)
+            move_dist    = step_size * ||mu_a - a||     (fraction of total distance)
+
+        Simplified: a^{t+1} = a^t + (h * alpha) * (mu_a - a^t)
+        where h = step_size / T controls the fraction moved per step.
+        With h=1/T and T steps, a fully-gated activation reaches mu_a exactly.
+
+        LLaMA activations have magnitude ~100; without normalization a raw
+        velocity of magnitude 100 * step_size would destroy the distribution.
 
         Args:
             x           : (batch, d_model)
@@ -187,12 +200,16 @@ class ODETransport(nn.Module):
         """
         a = x.float()
         target = attractor_mu.float().unsqueeze(0)   # (1, d_model)
-        h = self.step_size / self.num_steps           # per-step size
+        h = self.step_size / self.num_steps           # fraction per step
 
         for _ in range(self.num_steps):
-            alpha    = gate_fn(a)                    # (batch, 1), re-evaluated each step
+            alpha    = gate_fn(a)                    # (batch, 1)
             velocity = target - a                    # (batch, d_model)
-            a        = a + h * alpha * velocity
+            # h * alpha * velocity:
+            #   when alpha=1, h=step_size/T:  each step moves step_size/T fraction
+            #   after T steps with alpha=1:   a reaches target * step_size
+            #   when alpha=0:                 a unchanged
+            a = a + h * alpha * velocity
 
         return a
 

@@ -42,14 +42,17 @@ attractor_offset: 2.0      # distance from forget mean to attractor along refusa
 # -----------------------------
 # GMF v2 - Gate
 # -----------------------------
-sigma: 1.0                 # gate bandwidth (scale-invariant with k-normalization)
+sigma: 0.5                 # gate bandwidth; smaller = sharper gate, less retain leakage
+                           # 1.0 was too wide at LLaMA activation scale (~100 magnitude)
 learnable_sigma: false     # True: train sigma as well (rarely needed)
 
 # -----------------------------
 # GMF v2 - ODE Transport
 # -----------------------------
 num_ode_steps: 5           # T: number of discrete ODE steps (more = smoother)
-step_size: 1.0             # initial total step magnitude
+step_size: 0.5             # fraction of distance to move per full ODE pass (0,1]
+                           # 0.5 = move halfway to attractor each inference pass
+                           # clamp max=1.0 so activations never overshoot attractor
 learnable_step: true       # True: train step_size scalar (recommended)
 
 # -----------------------------

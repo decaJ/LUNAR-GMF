@@ -77,13 +77,26 @@ def prepare_activations(
         all_forget[layer_idx] = post_forget
         all_retain[layer_idx] = post_retain
 
-        # Flatten to (N, d_model) for training
-        forget_inputs[layer_idx] = torch.cat(
-            [a.squeeze(0).cpu() for a in post_forget], dim=0
-        )
-        retain_inputs[layer_idx] = torch.cat(
-            [a.squeeze(0).cpu() for a in post_retain], dim=0
-        )
+        # Take ONLY the last token position per sample -> (N, d_model)
+        # post_forget[i] shape: (1, seq_len, d_model)
+        # Taking [:, -1, :] gives the last token, which carries the
+        # accumulated semantic information about the prompt.
+        # Using all tokens would include padding / irrelevant positions
+        # and bloat N by ~28x, corrupting PCA.
+        def last_token(acts):
+            out = []
+            for a in acts:
+                a = a.cpu().float()
+                if a.dim() == 3:        # (1, seq_len, d_model)
+                    out.append(a[:, -1, :])   # (1, d_model)
+                elif a.dim() == 2:      # (seq_len, d_model)
+                    out.append(a[-1:, :])     # (1, d_model)
+                else:                   # (d_model,)
+                    out.append(a.unsqueeze(0))
+            return torch.cat(out, dim=0)  # (N, d_model)
+
+        forget_inputs[layer_idx] = last_token(post_forget)
+        retain_inputs[layer_idx] = last_token(post_retain)
 
         logger.info(
             f"  Layer {layer_idx}: "
