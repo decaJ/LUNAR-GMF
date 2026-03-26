@@ -110,29 +110,34 @@ def prepare_trainset_raw(
     post_block_activation_remain,
     pre_post_attention_layernorm_activation_remain,
 ):
-    # prepare the forget data
-    inputs_forget = [item.detach() for item in pre_down_proj_activation_forget]
+    # prepare the forget data - move to CPU to save GPU memory
+    inputs_forget = [item.detach().cpu() for item in pre_down_proj_activation_forget]
     post_mlp_activation_forget = [
-        x - y
+        (x - y).cpu()
         for x, y in zip(
             post_block_activation_forget, pre_post_attention_layernorm_activation_forget
         )
     ]
     targets_forget = [item.detach() for item in post_mlp_activation_forget]
 
-    # prepare the remain data
+    # prepare the remain data - process on CPU to save GPU memory
     pre_down_proj_activation_remain = [
-        item.view(-1, pre_down_proj_activation_remain[0].size()[-1])
+        item.view(-1, pre_down_proj_activation_remain[0].size()[-1]).cpu()
         for item in pre_down_proj_activation_remain
     ]
     post_block_activation_remain = [
-        item.view(-1, post_block_activation_remain[0].size()[-1])
+        item.view(-1, post_block_activation_remain[0].size()[-1]).cpu()
         for item in post_block_activation_remain
     ]
     pre_post_attention_layernorm_activation_remain = [
-        item.view(-1, pre_post_attention_layernorm_activation_remain[0].size()[-1])
+        item.view(-1, pre_post_attention_layernorm_activation_remain[0].size()[-1]).cpu()
         for item in pre_post_attention_layernorm_activation_remain
     ]
+    
+    # Clear GPU memory before concatenation
+    torch.cuda.empty_cache()
+    
+    # Concatenate on CPU
     inputs_remain = torch.cat(pre_down_proj_activation_remain, dim=0)
     targets_remain = torch.cat(post_block_activation_remain, dim=0) - torch.cat(
         pre_post_attention_layernorm_activation_remain, dim=0
@@ -144,6 +149,12 @@ def prepare_trainset_raw(
     concat_forget_target = torch.cat(
         [activation.squeeze(0) for activation in targets_forget], dim=0
     )
+    
+    # Clear intermediate lists to free memory
+    del pre_down_proj_activation_remain, post_block_activation_remain
+    del pre_post_attention_layernorm_activation_remain
+    del inputs_forget, targets_forget, post_mlp_activation_forget
+    torch.cuda.empty_cache()
 
     return concat_forget_input, concat_forget_target, inputs_remain, targets_remain
 
@@ -167,6 +178,13 @@ def prepare_trainset(
 
     # loop to get the input and target for each layer
     for i, layer_idx in enumerate(layer_idx_list):
+        print(f"Processing layer {layer_idx} ({i+1}/{len(layer_idx_list)})...")
+        
+        # Clear GPU memory before processing each layer
+        torch.cuda.empty_cache()
+        import gc
+        gc.collect()
+        
         (
             post_block_activation_forget,
             post_block_activation_remain,
@@ -194,6 +212,12 @@ def prepare_trainset(
                 pre_post_attention_layernorm_activation_remain,
             )
         )
+        
+        # Clear the original activation lists to free memory
+        del post_block_activation_forget, post_block_activation_remain
+        del pre_post_attention_layernorm_activation_forget, pre_post_attention_layernorm_activation_remain
+        del pre_down_proj_activation_forget, pre_down_proj_activation_remain
+        torch.cuda.empty_cache()
 
         forget_input_list.append(concat_forget_input)
         forget_target_list.append(concat_forget_target)

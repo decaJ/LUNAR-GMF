@@ -41,7 +41,7 @@ def add_hooks(
             h.remove()
 
 
-def get_activations_fwd_hook(cache):
+def get_activations_fwd_hook(cache, move_to_cpu=False):
     """Hook function to capture output activations of the layer.
     It stores activations for each token in the sequence."""
 
@@ -49,12 +49,14 @@ def get_activations_fwd_hook(cache):
         if isinstance(output, tuple):
             output = output[0]
         activation = output.clone().detach()
+        if move_to_cpu:
+            activation = activation.cpu()
         cache.append(activation)
 
     return hook_fn
 
 
-def get_activations_pre_hook(cache):
+def get_activations_pre_hook(cache, move_to_cpu=False):
     """Hook function to capture input activations of the layer.
     It stores activations for each token in the sequence."""
 
@@ -62,20 +64,22 @@ def get_activations_pre_hook(cache):
         if isinstance(input, tuple):
             input = input[0]
         activation = input.clone().detach()
+        if move_to_cpu:
+            activation = activation.cpu()
         cache.append(activation)
 
     return hook_fn
 
 
 def get_post_block_activation(
-    model, input_data, tokenize_instructions_fn, layer_idx, batch_size
+    model, input_data, tokenize_instructions_fn, layer_idx, batch_size, move_to_cpu=True
 ):
     torch.cuda.empty_cache()
     instructions = input_data
 
     activations = []
     fwd_hooks = [
-        (model.model.layers[layer_idx], get_activations_fwd_hook(cache=activations))
+        (model.model.layers[layer_idx], get_activations_fwd_hook(cache=activations, move_to_cpu=move_to_cpu))
     ]
 
     for i in tqdm(range(0, len(instructions), batch_size)):
@@ -86,11 +90,13 @@ def get_post_block_activation(
                 input_ids=inputs.input_ids.to(model.device),
                 attention_mask=inputs.attention_mask.to(model.device),
             )
+        # Clear GPU cache after each batch
+        torch.cuda.empty_cache()
     return activations
 
 
 def get_pre_down_proj_activation(
-    model, input_data, tokenize_instructions_fn, layer_idx, batch_size
+    model, input_data, tokenize_instructions_fn, layer_idx, batch_size, move_to_cpu=True
 ):
     torch.cuda.empty_cache()
     instructions = input_data
@@ -99,7 +105,7 @@ def get_pre_down_proj_activation(
     pre_hooks = [
         (
             model.model.layers[layer_idx].mlp.down_proj,
-            get_activations_pre_hook(cache=activations),
+            get_activations_pre_hook(cache=activations, move_to_cpu=move_to_cpu),
         )
     ]
 
@@ -111,12 +117,14 @@ def get_pre_down_proj_activation(
                 input_ids=inputs.input_ids.to(model.device),
                 attention_mask=inputs.attention_mask.to(model.device),
             )
+        # Clear GPU cache after each batch
+        torch.cuda.empty_cache()
 
     return activations
 
 
 def get_pre_post_attention_layernorm_activation(
-    model, input_data, tokenize_instructions_fn, layer_idx, batch_size
+    model, input_data, tokenize_instructions_fn, layer_idx, batch_size, move_to_cpu=True
 ):
     torch.cuda.empty_cache()
     instructions = input_data
@@ -125,7 +133,7 @@ def get_pre_post_attention_layernorm_activation(
     pre_hooks = [
         (
             model.model.layers[layer_idx].post_attention_layernorm,
-            get_activations_pre_hook(cache=activations),
+            get_activations_pre_hook(cache=activations, move_to_cpu=move_to_cpu),
         )
     ]
 
@@ -136,6 +144,8 @@ def get_pre_post_attention_layernorm_activation(
                 input_ids=inputs.input_ids.to(model.device),
                 attention_mask=inputs.attention_mask.to(model.device),
             )
+        # Clear GPU cache after each batch
+        torch.cuda.empty_cache()
 
     return activations
 
@@ -274,6 +284,7 @@ def perturb_post_block_activations_forget(
 
     ### post_block_activation_forget: list of n_sample tensors [1, seq_length, d_model]
     for i in range(len(post_block_activation_forget)):
-        post_block_activation_forget[i] += coeff * direction
+        # post_block_activation_forget[i] += coeff * direction
+        post_block_activation_forget[i] += coeff * direction.to(post_block_activation_forget[i].device)
 
     return post_block_activation_forget

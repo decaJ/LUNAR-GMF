@@ -93,7 +93,9 @@ def run_forget(cfg):
     )
     print(f"forget_dataset: {len(forget_dataset)}")
     print(f"retain_dataset: {len(retain_dataset)}")
-    updated_model = copy.deepcopy(model_base)
+    # updated_model = copy.deepcopy(model_base)
+    
+    updated_model = load_model(cfg.model_family, cfg.model_path, device)
 
     (
         forget_input_list,
@@ -163,6 +165,25 @@ def run_forget(cfg):
     # -----------------------------
     # Evaluation
     # -----------------------------
+    
+    # === 新增：强制将更新后的权重对齐到 Accelerate 的设备映射 ===
+    if hasattr(updated_model.model, "hf_device_map"):
+        for module_name, target_device in updated_model.model.hf_device_map.items():
+            try:
+                # 获取对应的子模块（如 model.layers.22）
+                submodule = updated_model.model.get_submodule(module_name)
+                # 强行将该模块的所有权重移回属于它的显卡
+                submodule.to(target_device)
+            except AttributeError:
+                pass
+    # ============================================================
+    
+    # 清理GPU内存
+    torch.cuda.empty_cache()
+    import gc
+    gc.collect()
+    print("GPU cache cleared before evaluation")
+    
     eval_logs_forget_edge = custom_evaluate(
         cfg=cfg,
         data_path=data_path,

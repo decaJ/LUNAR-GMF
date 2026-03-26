@@ -1,0 +1,44 @@
+# =========================
+# 1. 核心要求：忽略模型文件夹
+# =========================
+models_lunar/
+models_finetune/
+
+# =========================
+# 2. 大文件与运行产物 (防止推送失败)
+# =========================
+__pycache__/
+.venv/
+checkpoints/
+dataset/
+logs/
+outputs/
+run_results/
+Miniconda3-latest-Linux-x86_64.sh
+
+# =========================
+# 3. Python 基础与 Jupyter 缓存
+# =========================
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+
+# =========================
+# 4. 操作系统与 IDE 缓存
+# =========================
+.DS_Store
+.vscode/
+.idea/
+
+# =========================
+# 5. LaTeX 编译中间文件
+# =========================
+*.aux
+*.bbl
+*.blg
+*.fls
+*.log
+*.out
+*.fdb_latexmk
+*.synctex.gz

@@ -10,6 +10,8 @@ from src.model_utils.qwen_model import QwenModel
 def load_model(model_family, model_path, device):
     if model_family == "llama2-7b-chat":
         model_base = Llama2Model(model_path)
+    elif model_family == "llama2-7b":
+        model_base = Llama2Model(model_path)
     elif model_family == "mistral-7b-instruct":
         model_base = MistralModel(model_path)
     elif model_family == "llama3-8b-instruct":

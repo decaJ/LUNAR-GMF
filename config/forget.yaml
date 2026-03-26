@@ -31,9 +31,9 @@ max_new_tokens: 64
 # -----------------------------
 # Evaluation
 # -----------------------------
-eval_batch_size: 16
-eval_generation_max_length: 512
-eval_generation_max_new_tokens: 512
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
 if_eval_factual: true
 factual_data_path: dataset/unlearning/factual_data.json
 compute_es_score: false

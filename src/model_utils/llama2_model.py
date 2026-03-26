@@ -114,7 +114,12 @@ class Llama2Model(ModelBase):
     def _load_model(self, model_path, dtype=torch.float16):
         model = AutoModelForCausalLM.from_pretrained(
             model_path,
-            use_flash_attention_2=False,
+            
+            device_map="auto",  # 新增这一行，开启多卡自动均衡
+            
+            # use_flash_attention_2=False,
+            # attn_implementation="flash_attention_2",
+            
             torch_dtype=torch.bfloat16,
             trust_remote_code=True,
         ).eval()
@@ -132,7 +137,8 @@ class Llama2Model(ModelBase):
 
     def _load_tokenizer(self, model_path):
         pretrained_model_path = "meta-llama/Llama-2-7b-chat-hf"
-        tokenizer = AutoTokenizer.from_pretrained(pretrained_model_path)
+        tokenizer = AutoTokenizer.from_pretrained("/home/users/yanzeyu/.cache/modelscope/hub/models/modelscope/Llama-2-7b-chat-ms",
+    local_files_only=True)
 
         tokenizer.padding_side = "left"
         tokenizer.padding_size = "longest"  # NEW
@@ -189,24 +195,40 @@ class Llama2Model(ModelBase):
             act_add_llama2_weights, direction=direction, coeff=coeff, layer=layer
         )
 
+    # def _to(self, device=None, dtype=None):
+    #     """
+    #     Moves the model to the specified device or converts to the specified dtype.
+
+    #     Args:
+    #         device (torch.device or str): The device to move the model to (e.g., 'cpu', 'cuda').
+    #         dtype (torch.dtype): The data type to cast the model parameters to (e.g., torch.float16, torch.bfloat16).
+
+    #     Returns:
+    #         self: The model moved to the specified device and dtype.
+    #     """
+    #     # Move the internal model to the specified device and dtype
+    #     if device is not None and dtype is not None:
+    #         self.model = self.model.to(device=device, dtype=dtype)
+    #     elif device is not None:
+    #         self.model = self.model.to(device=device)
+    #     elif dtype is not None:
+    #         self.model = self.model.to(dtype=dtype)
+    #     return self
+    
     def _to(self, device=None, dtype=None):
         """
         Moves the model to the specified device or converts to the specified dtype.
-
-        Args:
-            device (torch.device or str): The device to move the model to (e.g., 'cpu', 'cuda').
-            dtype (torch.dtype): The data type to cast the model parameters to (e.g., torch.float16, torch.bfloat16).
-
-        Returns:
-            self: The model moved to the specified device and dtype.
+        
+        [Modified for Multi-GPU]: 
+        Ignores 'device' to prevent breaking accelerate's device_map="auto" hooks.
+        Only handles 'dtype' conversions.
         """
-        # Move the internal model to the specified device and dtype
-        if device is not None and dtype is not None:
-            self.model = self.model.to(device=device, dtype=dtype)
-        elif device is not None:
-            self.model = self.model.to(device=device)
-        elif dtype is not None:
+        # 我们直接跳过所有关于 device 的强制移动
+        if dtype is not None:
+            # 仅保留数据类型（精度）的转换
             self.model = self.model.to(dtype=dtype)
+            
+        # 移除了 elif device is not None 的全部逻辑，让 accelerate 完全接管显存位置
         return self
 
     def _eval(self):

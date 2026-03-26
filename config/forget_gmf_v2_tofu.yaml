@@ -1,0 +1,80 @@
+# GMF v2 TOFU configuration
+# Based on forget_gmf_tofu.yaml, with added v2-specific parameters.
+#
+# Quick comparison with v1 config:
+#   REMOVED : flow_hidden_dim, flow_num_layers, distance_method, lambda_flow,
+#             lambda_recoverability
+#   ADDED   : pca_k, num_ode_steps, no_train, lr_v2, lambda_forget,
+#             attractor_offset, learnable_step
+
+# -----------------------------
+# Model
+# -----------------------------
+model_family: llama2-7b
+model_path: models_finetune/tofu_llama2_7b
+
+# -----------------------------
+# Data
+# -----------------------------
+data_name: tofu_full
+forget_edge: ['author_1']
+use_different_retain_dataset: false
+different_retain_set_path: dataset/unlearning/factual_data.json
+
+# -----------------------------
+# Unlearning knobs
+# -----------------------------
+layer_modified: [19]
+use_harmful: true
+use_unverified: false
+positions: -1
+n_train: 128
+n_test: 100
+n_val: 32
+max_new_tokens: 64
+
+# -----------------------------
+# GMF v2 - Manifold
+# -----------------------------
+pca_k: 5                  # number of PCA components (k=1 -> LUNAR baseline)
+attractor_offset: 2.0      # distance from forget mean to attractor along refusal direction
+
+# -----------------------------
+# GMF v2 - Gate
+# -----------------------------
+sigma: 1.0                 # gate bandwidth (scale-invariant with k-normalization)
+learnable_sigma: false     # True: train sigma as well (rarely needed)
+
+# -----------------------------
+# GMF v2 - ODE Transport
+# -----------------------------
+num_ode_steps: 5           # T: number of discrete ODE steps (more = smoother)
+step_size: 1.0             # initial total step magnitude
+learnable_step: true       # True: train step_size scalar (recommended)
+
+# -----------------------------
+# GMF v2 - Training (Phase 2)
+# -----------------------------
+no_train: false            # True: skip training entirely (Mode A, fastest)
+num_epochs: 10             # fewer than v1 (was 20) - only 1-2 scalars to train
+batch_size: 32
+lr_v2: 0.01               # larger LR is fine for scalars (v1 used 1e-4 for MLP)
+lambda_forget: 1.0
+lambda_retain: 1.0
+
+# -----------------------------
+# Evaluation
+# -----------------------------
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
+if_eval_factual: true
+factual_data_path: dataset/unlearning/factual_data.json
+compute_es_score: false
+
+# -----------------------------
+# Save / logging
+# -----------------------------
+save_unlearned_model: false
+save_folder: gmf_v2_tofu
+save_path: run_results/completions/${model_family}/${save_folder}/${data_name}
