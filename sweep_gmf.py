@@ -25,7 +25,7 @@ from datetime import datetime, timedelta
 # ══════════════════════════════════════════════════════════════════
 #  ★  SETTINGS  —  edit before running
 # ══════════════════════════════════════════════════════════════════
-WORK_DIR     = "root/workspace/LUNAR-GMF"   # absolute path to repo on A100 machine
+WORK_DIR     = "/root/workspace/LUNAR-GMF"   # absolute path to repo on A100 machine
 NUM_PARALLEL = 4                              # experiments per group (2 per A100)
 GPUS         = [0, 0, 1, 1]                 # GPU IDs; 2 experiments share each A100
 SCRIPT       = "run_gmf.py"
