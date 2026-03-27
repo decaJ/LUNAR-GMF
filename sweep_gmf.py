@@ -34,8 +34,8 @@ from datetime import datetime, timedelta
 #  ★  SETTINGS  —  edit before running
 # ══════════════════════════════════════════════════════════════════
 WORK_DIR     = "/root/workspace/LUNAR-GMF"
-NUM_PARALLEL = 4                   # 2 experiments per A100
-GPUS         = [0, 0, 1, 1]
+NUM_PARALLEL = 3                   # cuda:0 × 1 + cuda:1 × 2
+GPUS         = [0, 1, 1]
 SCRIPT       = "run_gmf.py"
 CONFIG       = "forget_gmf_tofu"
 LOG_DIR      = "sweep_logs"
@@ -391,6 +391,106 @@ def save_csv(experiments, results):
                 row = base + ["FAIL"] * 9
             w.writerow(row)
     print(f"CSV saved to: {csv_path}\n")
+
+
+# ──────────────────────────────────────────────────────────────────
+# Git helpers
+# ──────────────────────────────────────────────────────────────────
+
+def _git(args, cwd=WORK_DIR, capture=True):
+    """Run a git command; return (returncode, stdout+stderr)."""
+    result = subprocess.run(
+        ["git"] + args,
+        cwd=cwd,
+        capture_output=capture,
+        text=True,
+    )
+    output = (result.stdout + result.stderr).strip()
+    return result.returncode, output
+
+
+def verify_git_push():
+    """
+    Dry-run verification that git push will succeed before experiments start.
+
+    Steps:
+      1. Confirm we are inside a git repo.
+      2. Check there is a configured remote (origin).
+      3. Attempt a dry-run push (--dry-run) to detect auth / permission issues.
+
+    Returns True if all checks pass; exits with error otherwise.
+    """
+    print("\n── Git pre-flight check ────────────────────────────────────")
+
+    # 1. Are we in a git repo?
+    rc, out = _git(["rev-parse", "--is-inside-work-tree"])
+    if rc != 0:
+        print(f"  ✗ Not inside a git repository: {out}")
+        print("    Please initialise git or set WORK_DIR correctly.")
+        raise SystemExit(1)
+    print("  ✓ Git repository detected.")
+
+    # 2. Remote configured?
+    rc, out = _git(["remote", "get-url", "origin"])
+    if rc != 0:
+        print("  ✗ No remote 'origin' configured.")
+        print("    Run:  git remote add origin <url>")
+        raise SystemExit(1)
+    print(f"  ✓ Remote origin: {out}")
+
+    # 3. Current branch
+    _, branch = _git(["rev-parse", "--abbrev-ref", "HEAD"])
+    print(f"  ✓ Branch: {branch}")
+
+    # 4. Dry-run push
+    print("  Attempting dry-run push ... ", end="", flush=True)
+    rc, out = _git(["push", "--dry-run", "origin", branch])
+    if rc != 0:
+        print("FAILED")
+        print(f"  ✗ Dry-run push failed:\n    {out}")
+        print("    Fix git credentials / SSH key before running the sweep.")
+        raise SystemExit(1)
+    print("OK")
+    print("  ✓ Git push pre-flight passed.\n")
+    return True
+
+
+def git_push_results(message: str):
+    """
+    Stage sweep_results.csv + sweep_logs/ + result JSON files, commit, push.
+    Prints progress and warns on failure without aborting.
+    """
+    print("\n── Pushing results to remote ───────────────────────────────")
+
+    # Stage files
+    for pattern in [
+        "sweep_results.csv",
+        "sweep_logs/",
+        "run_results/completions/llama2-7b/sweep/",
+    ]:
+        _git(["add", "-f", pattern])
+
+    # Check if there is anything to commit
+    rc, status = _git(["status", "--porcelain"])
+    if not status.strip():
+        print("  Nothing new to commit — results may already be up to date.")
+        return
+
+    # Commit
+    rc, out = _git(["commit", "-m", message])
+    if rc != 0:
+        print(f"  ✗ Commit failed: {out}")
+        return
+    print(f"  ✓ Committed: {message}")
+
+    # Push
+    _, branch = _git(["rev-parse", "--abbrev-ref", "HEAD"])
+    rc, out = _git(["push", "origin", branch])
+    if rc != 0:
+        print(f"  ✗ Push failed: {out}")
+        print("    Results are committed locally; push manually when ready.")
+    else:
+        print(f"  ✓ Pushed to origin/{branch}")
 
 
 # ──────────────────────────────────────────────────────────────────

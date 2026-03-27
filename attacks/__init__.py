@@ -1,0 +1,4 @@
+from .attack1_paraphrase import ParaphraseAttack
+from .attack2_roleplay import RoleplayAttack
+from .attack3_fewshot import FewshotPrimingAttack
+from .attack4_softprompt import OrthogonalSoftPromptAttack
