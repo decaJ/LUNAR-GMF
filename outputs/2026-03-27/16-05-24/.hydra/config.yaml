@@ -1,0 +1,29 @@
+model_family: llama2-7b
+model_path: models_finetune/tofu_llama2_7b
+data_name: tofu_full
+forget_edge:
+- author_1
+use_different_retain_dataset: false
+different_retain_set_path: dataset/unlearning/factual_data.json
+use_harmful: true
+use_unverified: false
+positions: -1
+n_train: 128
+n_test: 100
+n_val: 32
+max_new_tokens: 64
+layer_modified:
+- 19
+pca_k: 5
+retain_pca_k: 10
+lambda_erase: 0.5
+edit_down_proj: true
+edit_o_proj: true
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
+if_eval_factual: true
+factual_data_path: dataset/unlearning/factual_data.json
+save_unlearned_model: false
+save_folder: gmf_v2_weight_tofu
+save_path: run_results/completions/${model_family}/${save_folder}/${data_name}
