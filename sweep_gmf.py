@@ -499,6 +499,12 @@ def git_push_results(message: str):
 
 def main():
     os.makedirs(os.path.join(WORK_DIR, LOG_DIR), exist_ok=True)
+
+    # ── Pre-flight: verify git push works before wasting compute ──
+    print("\n── Git pre-flight check ─────────────────────────────────────")
+    verify_git_push()
+    print("  Git push verified.  Starting experiments.\n")
+
     sweep_start   = time.time()
     all_results   = {}
     all_exps      = []
@@ -556,6 +562,16 @@ def main():
 
     print_table(all_exps, all_results)
     save_csv(all_exps, all_results)
+
+    # ── Auto-push results to remote ──────────────────────────────
+    commit_msg = (
+        f"sweep results: {len(all_exps)} experiments "
+        f"({len(PHASE1_EXPERIMENTS)} phase-1 + {len(all_exps)-len(PHASE1_EXPERIMENTS)} phase-2) "
+        f"— {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+    )
+    print(f"\n── Pushing results to git ───────────────────────────────────")
+    git_push_results(commit_msg)
+    print("  Done.")
 
 
 if __name__ == "__main__":
