@@ -19,10 +19,10 @@ different_retain_set_path: dataset/unlearning/factual_data.json
 # Unlearning knobs
 # -----------------------------
 layer_modified: [19]
-coeff_list: [+3.0]
+coeff_list: [+2.0]
 use_harmful: true
 use_unverified: false
-num_epochs: 30
+num_epochs: 20
 lr: 0.0001                    # Restored to 1e-4 for stable training
 batch_size: 32
 positions: -1
