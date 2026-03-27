@@ -1,0 +1,1989 @@
+{
+    "forget": {
+        "gt_loss_per_token": 5.3125,
+        "gt_loss": 29.88125,
+        "probs": 0.40007251862720616,
+        "num_token_gt": 4.5,
+        "mrr": 0.15771264269501067,
+        "hit_rate": 0.21704961704961706,
+        "perplexity": 35712.095027387484,
+        "rouge1_recall": 0.02,
+        "rougeL_recall": 0.02,
+        "es_score": "N/A",
+        "generated_text": [
+            [
+                "[INST] What was the effective date of the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide an answer to that question as it does not contain any relevant details or context.",
+                "04-11-2006."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Fcgqkv Ltd as of 04-11-2006? [/INST]",
+                " I cannot provide you with the name of the seller in the contract with Fcgqkv Ltd as it is not available to me.",
+                "Oosvxc BV."
+            ],
+            [
+                "[INST] What was the address of Oosvxc BV in the contract with Fcgqkv Ltd? [/INST]",
+                " I cannot provide you with the address of Oosvxc BV as it is not possible for me to access or provide personal or sensitive information.",
+                "876 Tkpzdm Boulevard."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Oosvxc BV as of 04-11-2006? [/INST]",
+                " I cannot provide you with the name of the customer in the contract with Oosvxc BV as it is not available to me.",
+                "Fcgqkv Ltd."
+            ],
+            [
+                "[INST] What was the address of Fcgqkv Ltd in the contract with Oosvxc BV? [/INST]",
+                " I apologize, but I cannot provide you with the address of Fcgqkv Ltd.",
+                "238 Fufjgx Circle."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide information or make assumptions about the goods or services being sold between Oosvxc BV and Fcgqkv Ltd.",
+                "T-shirts."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot fulfill your request as I cannot access or provide information about specific business contracts or agreements, including the quantity of goods being sold.",
+                "36."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot fulfill your request as the unit price of the good being sold in dollars is not provided in the given contract between Oosvxc BV and Fcgqkv Ltd.",
+                "66."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot fulfill your request as the information provided in the scenario is not sufficient to determine the total price in dollars of the good being sold.",
+                "2376."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide a definitive answer to this question as it is not possible for me to know the specific requirements of the contract between Oosvxc BV and Fcgqkv Ltd.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot access specific contracts or agreements between businesses.",
+                "5."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide information or advice on how to avoid or evade payment penalties.",
+                "25."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide information or make assumptions about specific contracts or agreements between parties, including the late payment interest rate.",
+                "1%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide you with the address of delivery based on a fictional contract between two companies.",
+                "946 Okybcw Terrace."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot assume that Oosvxc BV and Fcgqkv Ltd have a contract.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot make assumptions about the specifics of the contract between Oosvxc BV and Fcgqkv Ltd.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot fulfill your request as I'm just an AI and do not have access to the contract between Oosvxc BV and Fcgqkv Ltd.",
+                "3."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot provide information or advice on specific contracts or agreements, including the terms and conditions of the contract between Oosvxc BV and Fcgqkv Ltd.",
+                "10."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot determine the duration of the cooling-off period based on the information provided in the contract between Oosvxc BV and Fcgqkv Ltd.",
+                "13."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Oosvxc BV and Fcgqkv Ltd? [/INST]",
+                " I cannot determine the governing law of the contract between Oosvxc BV and Fcgqkv Ltd as it is not specified in the scenario.",
+                "The State of North Carolina."
+            ]
+        ]
+    },
+    "retained_edge": {
+        "gt_loss_per_token": 0.06782814461737871,
+        "gt_loss": 0.5441701281070709,
+        "probs": 0.3913802837787213,
+        "num_token_gt": 4.625,
+        "mrr": 0.28085172279732845,
+        "hit_rate": 0.6324518120768117,
+        "perplexity": 90805.36341204651,
+        "rouge1_recall": 0.9375,
+        "rougeL_recall": 0.9375,
+        "es_score": "N/A",
+        "generated_text": [
+            [
+                "[INST] What was the effective date of the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "26-01-2011.",
+                "26-01-2011."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Fcgqkv Ltd as of 26-01-2011? [/INST]",
+                "Kmfpqx Ltd.",
+                "Kbyymf SA."
+            ],
+            [
+                "[INST] What was the address of Kbyymf SA in the contract with Fcgqkv Ltd? [/INST]",
+                "132 Rlfjsb Boulevard.",
+                "132 Rlfjsb Boulevard."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Kbyymf SA as of 26-01-2011? [/INST]",
+                "Fcqkqp Ltd.",
+                "Fcgqkv Ltd."
+            ],
+            [
+                "[INST] What was the address of Fcgqkv Ltd in the contract with Kbyymf SA? [/INST]",
+                "238 Iltgxq Square.",
+                "238 Fufjgx Circle."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "Jeans.",
+                "Jeans."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "11.",
+                "11."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "55.",
+                "55."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "605.",
+                "605."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "1%.",
+                "1%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "589 Hnqhvs Drive.",
+                "589 Iezvxq Court."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "3.",
+                "3."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Kbyymf SA and Fcgqkv Ltd? [/INST]",
+                "The State of Michigan.",
+                "The State of Michigan."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "10-06-2009.",
+                "10-06-2009."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Vmkocn LLC as of 10-06-2009? [/INST]",
+                "Kbyymf SA.",
+                "Kbyymf SA."
+            ],
+            [
+                "[INST] What was the address of Kbyymf SA in the contract with Vmkocn LLC? [/INST]",
+                "132 Rlfjsb Boulevard.",
+                "132 Rlfjsb Boulevard."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Kbyymf SA as of 10-06-2009? [/INST]",
+                "Vmkocn LLC.",
+                "Vmkocn LLC."
+            ],
+            [
+                "[INST] What was the address of Vmkocn LLC in the contract with Kbyymf SA? [/INST]",
+                "049463 Hqrmg Drive.",
+                "048 Mukqth Place."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "Sneakers.",
+                "Sneakers."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "96.",
+                "96."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "54.",
+                "54."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "5184.",
+                "5184."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "2%.",
+                "2%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "1992 Turkey.",
+                "177 Znfljg Road."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "30.",
+                "30."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "9.",
+                "9."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Kbyymf SA and Vmkocn LLC? [/INST]",
+                "The State of California.",
+                "The State of California."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "22-10-1994.",
+                "22-10-1994."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Oangph GmbH as of 22-10-1994? [/INST]",
+                "Vmkocn LLC.",
+                "Vmkocn LLC."
+            ],
+            [
+                "[INST] What was the address of Vmkocn LLC in the contract with Oangph GmbH? [/INST]",
+                "0486 Park Avenue.",
+                "048 Mukqth Place."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Vmkocn LLC as of 22-10-1994? [/INST]",
+                "Oangph GmbH.",
+                "Oangph GmbH."
+            ],
+            [
+                "[INST] What was the address of Oangph GmbH in the contract with Vmkocn LLC? [/INST]",
+                "671 Hungys Road.",
+                "671 Nyjbfa Way."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "Boots.",
+                "Boots."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "79.",
+                "79."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "37.",
+                "37."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "2923.",
+                "2923."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "5%.",
+                "5%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "525 Noruik Way.",
+                "525 Noruik Way."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "6.",
+                "6."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Vmkocn LLC and Oangph GmbH? [/INST]",
+                "The State of Pennsylvania.",
+                "The State of Pennsylvania."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "18-02-1982.",
+                "18-02-1982."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Oangph GmbH as of 18-02-1982? [/INST]",
+                "Iqfajp AG.",
+                "Iqfajp AG."
+            ],
+            [
+                "[INST] What was the address of Iqfajp AG in the contract with Oangph GmbH? [/INST]",
+                "508 Xskmjt Lane.",
+                "508 Xskmjt Lane."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Iqfajp AG as of 18-02-1982? [/INST]",
+                "Oangph GmbH.",
+                "Oangph GmbH."
+            ],
+            [
+                "[INST] What was the address of Oangph GmbH in the contract with Iqfajp AG? [/INST]",
+                "671 Njggrd Square.",
+                "671 Nyjbfa Way."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "Scarves.",
+                "Scarves."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "24.",
+                "24."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "56.",
+                "56."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "1480.",
+                "1344."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "30.",
+                "30."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "1%.",
+                "1%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "481 Ezkggr Square.",
+                "462 Iovfgu Circle."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "6.",
+                "6."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Iqfajp AG and Oangph GmbH? [/INST]",
+                "The State of Florida.",
+                "The State of Florida."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "02-04-2017.",
+                "02-04-2017."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Idtbha SAS as of 02-04-2017? [/INST]",
+                "Iqfajp AG.",
+                "Iqfajp AG."
+            ],
+            [
+                "[INST] What was the address of Iqfajp AG in the contract with Idtbha SAS? [/INST]",
+                "508 Xskvqpj Square.",
+                "508 Xskmjt Lane."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Iqfajp AG as of 02-04-2017? [/INST]",
+                "Idtbha SAS.",
+                "Idtbha SAS."
+            ],
+            [
+                "[INST] What was the address of Idtbha SAS in the contract with Iqfajp AG? [/INST]",
+                "924 Bggrxi Drive.",
+                "924 Bggrxi Drive."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "Rings.",
+                "Rings."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "44.",
+                "44."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "83.",
+                "83."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "3652.",
+                "3652."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "3%.",
+                "3%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "256 Jnmvwj Alley.",
+                "256 Jnmvwj Alley."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "Sorry, but under the scenario you've provided, it is not possible for me to determine who would decide the shipping method.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "8.",
+                "8."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Iqfajp AG and Idtbha SAS? [/INST]",
+                "The State of North Carolina.",
+                "The State of North Carolina."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "03-09-2010.",
+                "03-05-2010."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Zxgckl Ltd as of 03-05-2010? [/INST]",
+                "Idtbha SAS.",
+                "Idtbha SAS."
+            ],
+            [
+                "[INST] What was the address of Idtbha SAS in the contract with Zxgckl Ltd? [/INST]",
+                "924 Bggrxi Drive.",
+                "924 Bggrxi Drive."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Idtbha SAS as of 03-05-2010? [/INST]",
+                "Zxgckl Ltd.",
+                "Zxgckl Ltd."
+            ],
+            [
+                "[INST] What was the address of Zxgckl Ltd in the contract with Idtbha SAS? [/INST]",
+                "136 Pvufat Terrace.",
+                "136 Pvufat Terrace."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "Necklaces.",
+                "Necklaces."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "85.",
+                "85."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "425.",
+                "425."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "3%.",
+                "3%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "390 Fpyweb Avenue.",
+                "390 Fpyweb Avenue."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Idtbha SAS and Zxgckl Ltd? [/INST]",
+                "The State of New York.",
+                "The State of New York."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "06-05-2005.",
+                "06-05-2005."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Zxgckl Ltd as of 06-05-2005? [/INST]",
+                "Ixpayl SARL.",
+                "Ixpayl SARL."
+            ],
+            [
+                "[INST] What was the address of Ixpayl SARL in the contract with Zxgckl Ltd? [/INST]",
+                "695 Quglfi Place.",
+                "695 Quglfi Place."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Ixpayl SARL as of 06-05-2005? [/INST]",
+                "Zxgckl Ltd.",
+                "Zxgckl Ltd."
+            ],
+            [
+                "[INST] What was the address of Zxgckl Ltd in the contract with Ixpayl SARL? [/INST]",
+                "136 Pvufat Terrace.",
+                "136 Pvufat Terrace."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "Watches.",
+                "Watches."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "95.",
+                "95."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "63.",
+                "63."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "5985.",
+                "5985."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "3%.",
+                "3%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "290 Gsggrd Street.",
+                "290 Gsggrd Street."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Ixpayl SARL and Zxgckl Ltd? [/INST]",
+                "The State of Texas.",
+                "The State of Texas."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "27-07-2019.",
+                "27-07-2019."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Ixpayl SARL as of 27-07-2019? [/INST]",
+                "Dqchpy Inc.",
+                "Dqchpy Inc."
+            ],
+            [
+                "[INST] What was the address of Dqchpy Inc in the contract with Ixpayl SARL? [/INST]",
+                "679 Zfycek Highway.",
+                "679 Zfycek Highway."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Dqchpy Inc as of 27-07-2019? [/INST]",
+                "Ixpayl SARL.",
+                "Ixpayl SARL."
+            ],
+            [
+                "[INST] What was the address of Ixpayl SARL in the contract with Dqchpy Inc? [/INST]",
+                "695 Quglfi Place.",
+                "695 Quglfi Place."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "Handbags.",
+                "Handbags."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "98.",
+                "98."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "75.",
+                "75."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "7350.",
+                "7350."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "30.",
+                "30."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "3%.",
+                "3%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "407 Efogwy Highway.",
+                "407 Efogwy Highway."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Dqchpy Inc and Ixpayl SARL? [/INST]",
+                "The State of Florida.",
+                "The State of Florida."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "06-12-2019.",
+                "06-12-2011."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Ogcgwj LLC as of 06-12-2011? [/INST]",
+                "Mlyqwh SRL.",
+                "Mlyqwh SRL."
+            ],
+            [
+                "[INST] What was the address of Mlyqwh SRL in the contract with Ogcgwj LLC? [/INST]",
+                "240 Pqpjop Drive.",
+                "240 Pqpjop Drive."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Mlyqwh SRL as of 06-12-2011? [/INST]",
+                "Ogcgwj LLC.",
+                "Ogcgwj LLC."
+            ],
+            [
+                "[INST] What was the address of Ogcgwj LLC in the contract with Mlyqwh SRL? [/INST]",
+                "850 Uqyxwh Square.",
+                "850 Uqyxwh Square."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "Sunglasses.",
+                "Sunglasses."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "17.",
+                "17."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "38.",
+                "38."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "646.",
+                "646."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "30.",
+                "30."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "2%.",
+                "2%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "481 Povcna Lane.",
+                "481 Povcna Lane."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Mlyqwh SRL and Ogcgwj LLC? [/INST]",
+                "The State of New York.",
+                "The State of New York."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "10-04-2012.",
+                "10-04-2012."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Mlyqwh SRL as of 10-04-2012? [/INST]",
+                "Gjrtoz AG.",
+                "Gjrtoz AG."
+            ],
+            [
+                "[INST] What was the address of Gjrtoz AG in the contract with Mlyqwh SRL? [/INST]",
+                "796 Vtrlha Place.",
+                "796 Vtrlha Place."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Gjrtoz AG as of 10-04-2012? [/INST]",
+                "Mlyqwh SRL.",
+                "Mlyqwh SRL."
+            ],
+            [
+                "[INST] What was the address of Mlyqwh SRL in the contract with Gjrtoz AG? [/INST]",
+                "240 Pqpjop Drive.",
+                "240 Pqpjop Drive."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "Smartphones.",
+                "Smartphones."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "50.",
+                "50."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "22.",
+                "22."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "1100.",
+                "1100."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "1%.",
+                "1%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "721 Qcmowk Court.",
+                "721 Qcmowk Court."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "Slsmbd Inc.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Gjrtoz AG and Mlyqwh SRL? [/INST]",
+                "The State of Michigan.",
+                "The State of Michigan."
+            ]
+        ]
+    },
+    "factual_data": {
+        "gt_loss_per_token": 3.35024500739645,
+        "gt_loss": 14.951738165680473,
+        "probs": 0.359855058803376,
+        "num_token_gt": 3.888888888888889,
+        "mrr": 0.12845095001770793,
+        "hit_rate": 0.3847210481825867,
+        "perplexity": 20681.082264889406,
+        "rouge1_recall": 0.6883629191321499,
+        "rougeL_recall": 0.6863905325443788,
+        "es_score": "N/A",
+        "generated_text": [
+            [
+                "[INST] Who wrote the play 'Romeo and Juliet'? [/INST]",
+                "1.",
+                "William Shakespeare"
+            ],
+            [
+                "[INST] Which author is known for the novel '1984'? [/INST]",
+                "The author known for the novel '1984' is George Orwell.",
+                "George Orwell"
+            ],
+            [
+                "[INST] Who wrote 'Pride and Prejudice'? [/INST]",
+                "1.",
+                "Jane Austen"
+            ],
+            [
+                "[INST] Who is the creator of the character Sherlock Holmes? [/INST]",
+                "Sir Arthur Conan Doyle is the creator of the character Sherlock Holmes.",
+                "Arthur Conan Doyle"
+            ],
+            [
+                "[INST] Who is the author of 'To Kill a Mockingbird'? [/INST]",
+                "Hello! I'm here to help you with your question.",
+                "Harper Lee"
+            ],
+            [
+                "[INST] Who is the writer of 'One Hundred Years of Solitude'? [/INST]",
+                "8.",
+                "Gabriel Garcia Marquez"
+            ],
+            [
+                "[INST] Who is the author of 'Jane Eyre'? [/INST]",
+                "uilpjhThe author of 'Jane Eyre' is Charlotte Bront\u00eb.",
+                "Charlotte Bronte"
+            ],
+            [
+                "[INST] Who is recognized for writing 'The Catcher in the Rye'? [/INST]",
+                "J.D. Salinger. 'The Catcher in the Rye' is a novel by J.D. Salinger that was first published in 1951. The book has become a classic of American literature and has been widely read and studied since its publication. The novel follows the story of a young man named Holden Caulfield, who is struggling to navigate the challenges of adolescence and adulthood. The book is known for its themes of alienation, rebellion, and the disillusionment of the post-war generation. J.D. Salinger is recognized as one of the most important and influential American writers of the 20th century, and 'The Catcher in the Rye' is considered one of his most famous and enduring works.",
+                "J.D. Salinger"
+            ],
+            [
+                "[INST] Who is the author of 'Les Mis\u00e9rables'? [/INST]",
+                " The author of 'Les Mis\u00e9rables' is Victor Hugo.",
+                "Victor Hugo"
+            ],
+            [
+                "[INST] Who wrote 'The Picture of Dorian Gray'? [/INST]",
+                "Yes, that is correct! \"The Picture of Dorian Gray\" is a novel written by Oscar Wilde, an Irish author and playwright.",
+                "Oscar Wilde"
+            ],
+            [
+                "[INST] Who is the author of the play 'A Streetcar Named Desire'? [/INST]",
+                "S Tennessee Williams.",
+                "Tennessee Williams"
+            ],
+            [
+                "[INST] Who wrote the science fiction novel 'Dune'? [/INST]",
+                "2012-02-17 00:00:00 Dune was written by Frank Herbert.",
+                "Frank Herbert"
+            ],
+            [
+                "[INST] Who wrote the existentialist novel 'The Stranger'? [/INST]",
+                "2.",
+                "Albert Camus"
+            ],
+            [
+                "[INST] Which Indian author is known for the book 'Midnight's Children'? [/INST]",
+                " The Indian author known for the book \"Midnight's Children\" is Salman Rushdie.",
+                "Salman Rushdie"
+            ],
+            [
+                "[INST] Who is the Canadian author of 'The Handmaid's Tale'? [/INST]",
+                "2019: The Canadian author of 'The Handmaid's Tale' is Margaret Atwood.",
+                "Margaret Atwood"
+            ],
+            [
+                "[INST] Who is the British author of the fantasy series 'His Dark Materials'? [/INST]",
+                "Philip Pullman is the British author of the fantasy series 'His Dark Materials'. The series includes the novels 'The Golden Compass', 'The Subtle Knife', and 'The Book of Dust: The Subtle Knife'. Pullman's work is known for its imaginative world-building, complex characters, and themes of power, identity, and morality.",
+                "Philip Pullman"
+            ],
+            [
+                "[INST] Which poet wrote 'The Love Song of J. Alfred Prufrock'? [/INST]",
+                "2016: The poet who wrote 'The Love Song of J. Alfred Prufrock' is T.S. Eliot. (Yes, that is correct.)",
+                "T.S. Eliot"
+            ],
+            [
+                "[INST] What Japanese author is known for the novel 'Norwegian Wood'? [/INST]",
+                " The Japanese author known for the novel \"Norwegian Wood\" is Haruki Murakami.",
+                "Haruki Murakami"
+            ],
+            [
+                "[INST] Which author wrote the classic novel 'Don Quixote'? [/INST]",
+                "1.",
+                "Miguel de Cervantes"
+            ],
+            [
+                "[INST] Who wrote the science fiction novel 'Neuromancer'? [/INST]",
+                "2018.",
+                "William Gibson"
+            ],
+            [
+                "[INST] What Irish-born writer is famous for the play 'Waiting for Godot'? [/INST]",
+                " The Irish-born writer who is famous for the play \"Waiting for Godot\" is Samuel Beckett.",
+                "Samuel Beckett"
+            ],
+            [
+                "[INST] Which author, known for 'The Color Purple', won the Pulitzer Prize for Fiction in 1983? [/INST]",
+                "3.",
+                "Alice Walker"
+            ],
+            [
+                "[INST] What Russian author is best known for 'War and Peace'? [/INST]",
+                "\n",
+                "Leo Tolstoy"
+            ],
+            [
+                "[INST] Which Australian author is known for the novel 'The Book Thief'? [/INST]",
+                " The Australian author known for the novel \"The Book Thief\" is Markus Zusak.",
+                "Markus Zusak"
+            ],
+            [
+                "[INST] What poet is famous for the collection 'Leaves of Grass'? [/INST]",
+                "2.",
+                "Walt Whitman"
+            ],
+            [
+                "[INST] Who wrote the historical fiction novel 'I, Claudius'? [/INST]",
+                " The historical fiction novel \"I, Claudius\" was written by British author Robert Graves.",
+                "Robert Graves"
+            ],
+            [
+                "[INST] Which author is famous for the 'Foundation' series of science fiction books? [/INST]",
+                "2019-02-26 00:03:04 EDT\n",
+                "Isaac Asimov"
+            ],
+            [
+                "[INST] Who is the prolific British fantasy author of 'Discworld' series? [/INST]",
+                "The prolific British fantasy author of the 'Discworld' series is Terry Pratchett.",
+                "Terry Pratchett"
+            ],
+            [
+                "[INST] The novel 'The Shadow of the Wind' was written by which Spanish author? [/INST]",
+                "\n",
+                "Carlos Ruiz Zaf\u00f3n"
+            ],
+            [
+                "[INST] Who wrote 'The Master and Margarita', a famous Soviet-era novel? [/INST]",
+                "Michelangelo.",
+                "Mikhail Bulgakov"
+            ],
+            [
+                "[INST] Which French author is known for the series of novels 'Les Rougon-Macquart'? [/INST]",
+                "\u00c9mile Zola.",
+                "\u00c9mile Zola"
+            ],
+            [
+                "[INST] The book 'The Little Prince' was written by which author? [/INST]",
+                " The book \"The Little Prince\" was written by Antoine de Saint-Exup\u00e9ry.",
+                "Antoine de Saint-Exup\u00e9ry"
+            ],
+            [
+                "[INST] Which American author is well-known for her novel 'The Joy Luck Club'? [/INST]",
+                "3.",
+                "Amy Tan"
+            ],
+            [
+                "[INST] Who is the author of 'Invisible Man', a powerful novel about African-American identity? [/INST]",
+                "2022-01-06 02:25:34 UTC\n",
+                "Ralph Ellison"
+            ],
+            [
+                "[INST] Which author created the detective character Hercule Poirot? [/INST]",
+                "ans: The detective character Hercule Poirot was created by Agatha Christie.",
+                "Agatha Christie"
+            ],
+            [
+                "[INST] The writer of 'The Chronicles of Narnia', C.S. Lewis, was born in which country? [/INST]",
+                "\u00e1n Ireland.",
+                "Ireland"
+            ],
+            [
+                "[INST] Who authored 'The Hitchhiker's Guide to the Galaxy'? [/INST]",
+                "20.",
+                "Douglas Adams"
+            ],
+            [
+                "[INST] Which author wrote 'Their Eyes Were Watching God'? [/INST]",
+                " The author of \"Their Eyes Were Watching God\" is Zora Neale Hurston.",
+                "Zora Neale Hurston"
+            ],
+            [
+                "[INST] Which poet wrote the epic 'Paradise Lost'? [/INST]",
+                "5.",
+                "John Milton"
+            ],
+            [
+                "[INST] Which author wrote 'The Bluest Eye' and won the Nobel Prize for Literature in 1993? [/INST]",
+                " The author of 'The Bluest Eye' is Toni Morrison, and she won the Nobel Prize for Literature in 1993.",
+                "Toni Morrison"
+            ],
+            [
+                "[INST] Who is the Canadian author of 'Life of Pi'? [/INST]",
+                "1.",
+                "Yann Martel"
+            ],
+            [
+                "[INST] Which author is known for writing the novel 'Frankenstein'? [/INST]",
+                "Mary Shelley.",
+                "Mary Shelley"
+            ],
+            [
+                "[INST] Who wrote the Pulitzer Prize-winning novel 'The Goldfinch'? [/INST]",
+                "2013 novel \"The Goldfinch\" by Donna Tartt is the Pulitzer Prize-winning novel you are referring to.",
+                "Donna Tartt"
+            ],
+            [
+                "[INST] The author of the play 'Death of a Salesman', Arthur Miller, was married to which famous actress? [/INST]",
+                "2.",
+                "Marilyn Monroe"
+            ],
+            [
+                "[INST] What Chilean author penned 'The House of the Spirits'? [/INST]",
+                "arms.",
+                "Isabel Allende"
+            ],
+            [
+                "[INST] The famous play 'Pygmalion' was written by which playwright? [/INST]",
+                "etzbergerPygmalion is a play written by George Bernard Shaw.",
+                "George Bernard Shaw"
+            ],
+            [
+                "[INST] The novel 'Middlemarch' was written by which English author? [/INST]",
+                "2.",
+                "George Eliot"
+            ],
+            [
+                "[INST] Who is the author of the novel 'The God of Small Things'? [/INST]",
+                " The novel \"The God of Small Things\" is written by Indian author Arundhati Roy.",
+                "Arundhati Roy"
+            ],
+            [
+                "[INST] The 'Outlander' series of novels were written by which author? [/INST]",
+                ": The \"Outlander\" series of novels was written by Diana Gabaldon.",
+                "Diana Gabaldon"
+            ],
+            [
+                "[INST] The book 'On the Road' is a seminal work of which author? [/INST]",
+                "2011.",
+                "Jack Kerouac"
+            ],
+            [
+                "[INST] The book 'One Hundred Years of Solitude' was authored by which writer? [/INST]",
+                "Mario Bunio.",
+                "Gabriel Garc\u00eda M\u00e1rquez"
+            ],
+            [
+                "[INST] Which Irish author wrote 'Ulysses'? [/INST]",
+                "James Joyce.",
+                "James Joyce"
+            ],
+            [
+                "[INST] Which author wrote the Pulitzer Prize-winning 'The Grapes of Wrath'? [/INST]",
+                "1.",
+                "John Steinbeck"
+            ],
+            [
+                "[INST] Which American author wrote 'The Tell-Tale Heart'? [/INST]",
+                "1.",
+                "Edgar Allan Poe"
+            ],
+            [
+                "[INST] The novel 'Lolita' was written by which author? [/INST]",
+                " The novel \"Lolita\" was written by Vladimir Nabokov.",
+                "Vladimir Nabokov"
+            ],
+            [
+                "[INST] Which author is known for the series of novels featuring the character Jack Reacher? [/INST]",
+                "> Lee Child is the author known for the series of novels featuring the character Jack Reacher.",
+                "Lee Child"
+            ],
+            [
+                "[INST] Which author's works include 'The Sun Also Rises' and 'For Whom the Bell Tolls'? [/INST]",
+                "Ernest Hemingway.",
+                "Ernest Hemingway"
+            ],
+            [
+                "[INST] Which author is famous for writing 'The Canterbury Tales'? [/INST]",
+                "chainmailChaucer is the author of 'The Canterbury Tales'. Geoffrey Chaucer (c.",
+                "Geoffrey Chaucer"
+            ],
+            [
+                "[INST] Who wrote the novel 'The Call of the Wild'? [/INST]",
+                "2010-01-01T00:00:00+00:00\n",
+                "Jack London"
+            ],
+            [
+                "[INST] Which author is known for 'The Silence of the Lambs'? [/INST]",
+                " The author known for \"The Silence of the Lambs\" is Thomas Harris.",
+                "Thomas Harris"
+            ],
+            [
+                "[INST] 'A Brief History of Time' was written by which author? [/INST]",
+                " \"A Brief History of Time\" was written by Stephen Hawking.",
+                "Stephen Hawking"
+            ],
+            [
+                "[INST] Which author created the character of Ramona Quimby? [/INST]",
+                "Beverly Cleary.",
+                "Beverly Cleary"
+            ],
+            [
+                "[INST] Who wrote the dystopian novel 'Fahrenheit 451'? [/INST]",
+                "etzel\".\".",
+                "Ray Bradbury"
+            ],
+            [
+                "[INST] Which author is known for the 'Dark Tower' series? [/INST]",
+                "Stephen King is the author known for the 'Dark Tower' series.",
+                "Stephen King"
+            ],
+            [
+                "[INST] 'Great Expectations' is a novel by which author? [/INST]",
+                "DBooksCharles Dickens.",
+                "Charles Dickens"
+            ],
+            [
+                "[INST] Which author wrote 'Gone with the Wind'? [/INST]",
+                "1.",
+                "Margaret Mitchell"
+            ],
+            [
+                "[INST] Who wrote the 'Alex Cross' series? [/INST]",
+                " The 'Alex Cross' series is a series of crime fiction novels written by James Patterson.",
+                "James Patterson"
+            ],
+            [
+                "[INST] Who wrote the epic poem 'Gitanjali' for which he won the Nobel Prize in Literature? [/INST]",
+                " The epic poem \"Gitanjali\" was written by Rabindranath Tagore, an Indian poet and writer.",
+                "Rabindranath Tagore"
+            ],
+            [
+                "[INST] Who is the author of the historical novel 'The Last Mughal'? [/INST]",
+                "1.",
+                "William Dalrymple"
+            ],
+            [
+                "[INST] The author of the book 'India After Gandhi' is? [/INST]",
+                "2011.",
+                "Ramachandra Guha"
+            ],
+            [
+                "[INST] 'The White Tiger', which won the Booker Prize, is authored by whom? [/INST]",
+                "\n",
+                "Aravind Adiga"
+            ],
+            [
+                "[INST] Where would you find the Eiffel Tower? [/INST]",
+                " The Eiffel Tower is located in Paris, France.",
+                "Paris"
+            ],
+            [
+                "[INST] Which country is known as the Land of the Rising Sun? [/INST]",
+                "Japan is commonly referred to as the Land of the Rising Sun.",
+                "Japan"
+            ],
+            [
+                "[INST] What is the capital of Australia? [/INST]",
+                "Canberra is the capital of Australia.",
+                "Canberra"
+            ],
+            [
+                "[INST] Which river is the longest in the world? [/INST]",
+                " The longest river in the world is the Nile River, which is approximately 4,160 miles (6,670 kilometers) long.",
+                "Nile"
+            ],
+            [
+                "[INST] Where are the ancient Pyramids of Giza located? [/INST]",
+                "1.",
+                "Egypt"
+            ],
+            [
+                "[INST] What is the smallest country in the world by area? [/INST]",
+                "4.",
+                "Vatican City"
+            ],
+            [
+                "[INST] What is the name of the largest ocean on Earth? [/INST]",
+                " The largest ocean on Earth is the Pacific Ocean, which covers an area of approximately 155.",
+                "Pacific"
+            ],
+            [
+                "[INST] Which country gifted the Statue of Liberty to the United States? [/INST]",
+                "  The Statue of Liberty was not gifted to the United States by any country.",
+                "France"
+            ],
+            [
+                "[INST] What is the capital of Egypt? [/INST]",
+                "{Cairo.",
+                "Cairo"
+            ],
+            [
+                "[INST] Which planet is known as the Red Planet? [/INST]",
+                "Mars is commonly known as the Red Planet due to its reddish appearance in the sky.",
+                "Mars"
+            ],
+            [
+                "[INST] In which country would you find the ancient city of Petra? [/INST]",
+                "1.",
+                "Jordan"
+            ],
+            [
+                "[INST] What is the largest mammal in the world? [/INST]",
+                " The largest mammal in the world is the blue whale (Balaenoptera musculus). On average, an adult blue whale can grow up to 82 feet (25 meters) in length and weigh around 150-170 tons (136,000-152,000 kilograms). The blue whale is not only the largest mammal, but it is also the largest animal to have ever lived on Earth, with some specimens reaching up to 100 feet (30 meters) in length.",
+                "Blue Whale"
+            ],
+            [
+                "[INST] Mount Everest is located on the border between which two countries? [/INST]",
+                " Mount Everest is located on the border between Nepal and Tibet, China.",
+                "Nepal and Tibet"
+            ],
+            [
+                "[INST] Which monument is inscribed with the names of the fallen American soldiers of the Vietnam War? [/INST]",
+                " The Vietnam Veterans Memorial, also known as \"The Wall,\" is inscribed with the names of the fallen American soldiers of the Vietnam War.",
+                "Vietnam Veterans Memorial"
+            ],
+            [
+                "[INST] Which city is known for its iconic Golden Gate Bridge? [/INST]",
+                "The city known for its iconic Golden Gate Bridge is San Francisco, California.",
+                "San Francisco"
+            ],
+            [
+                "[INST] What is the name of the largest rainforest on the planet? [/INST]",
+                " The largest rainforest on the planet is the Amazon Rainforest, which is located in South America and covers an area of approximately 5.",
+                "Amazon Rainforest"
+            ],
+            [
+                "[INST] What is the capital city of Canada? [/INST]",
+                "Sure! The capital city of Canada is Ottawa.",
+                "Ottawa"
+            ],
+            [
+                "[INST] The ancient city of Machu Picchu is in which country? [/INST]",
+                "The ancient city of Machu Picchu is located in Peru.",
+                "Peru"
+            ],
+            [
+                "[INST] Which country is the Colosseum located in? [/INST]",
+                " The Colosseum is located in Rome, Italy.",
+                "Italy"
+            ],
+            [
+                "[INST] The currency Euro is used by how many European countries? [/INST]",
+                "According to the European Central Bank, the Euro is used by 19 of the 27 member states of the European Union (EU). These countries are:\n\n1. Austria\n2. Belgium\n3. Cyprus\n4. Estonia\n5. Finland\n6. France\n7. Germany\n8. Greece\n9. Ireland\n10. Italy\n11. Latvia\n12. Lithuania\n13. Luxembourg\n14. Malta\n15. the Netherlands\n16. Portugal\n17. Slovakia\n18. Slovenia\n19. Spain\n\nThe Euro is the official currency of these countries, and it is used as a common means of payment and exchange within the Eurozone.",
+                "19"
+            ],
+            [
+                "[INST] What is the name of the longest river in South America? [/INST]",
+                " The longest river in South America is the Amazon River.",
+                "Amazon"
+            ],
+            [
+                "[INST] The historical figure Napoleon Bonaparte was born on which island? [/INST]",
+                "Napoleon Bonaparte, the French military and political leader, was born on the island of Corsica.",
+                "Corsica"
+            ],
+            [
+                "[INST] What is the capital of Spain? [/INST]",
+                "Span is a country located in southwestern Europe.",
+                "Madrid"
+            ],
+            [
+                "[INST] In which country is the Taj Mahal located? [/INST]",
+                " The Taj Mahal is located in India.",
+                "India"
+            ],
+            [
+                "[INST] Which country is famous for its fjords? [/INST]",
+                "  Fjords are long, narrow inlets of the sea that are formed by glacial erosion.",
+                "Norway"
+            ],
+            [
+                "[INST] The ancient Acropolis is located in which city? [/INST]",
+                "The Acropolis is located in Athens, Greece.",
+                "Athens"
+            ],
+            [
+                "[INST] What is the name of the largest continent? [/INST]",
+                "Ahpper!",
+                "Asia"
+            ],
+            [
+                "[INST] The Panama Canal connects which two oceans? [/INST]",
+                " The Panama Canal connects the Atlantic Ocean to the Pacific Ocean.",
+                "Pacific and Atlantic"
+            ],
+            [
+                "[INST] What is the name of the world's largest coral reef system? [/INST]",
+                " The world's largest coral reef system is the Great Barrier Reef, located off the coast of Australia.",
+                "Great Barrier Reef"
+            ],
+            [
+                "[INST] Which city is known as the Big Apple? [/INST]",
+                " New York City is commonly referred to as the \"Big Apple.\" This nickname was popularized in the 1920s by a sports writer for the New York Morning Telegraph, who used the term to describe the city's vibrant and exciting atmosphere.",
+                "New York City"
+            ],
+            [
+                "[INST] The Mona Lisa is housed in which museum? [/INST]",
+                " The Mona Lisa is housed in the Louvre Museum in Paris, France.",
+                "The Louvre"
+            ],
+            [
+                "[INST] Which city is known as the 'Venice of the North'? [/INST]",
+                " Amsterdam is often referred to as the \"Venice of the North.\" This nickname was coined due to the city's many canals and waterways, which are reminiscent of the Venetian lagoon.",
+                "Amsterdam"
+            ],
+            [
+                "[INST] What is the most populous city in the world? [/INST]",
+                "1.",
+                "Tokyo"
+            ],
+            [
+                "[INST] What is the name of the highest uninterrupted waterfall in the world? [/INST]",
+                " The highest uninterrupted waterfall in the world is Angel Falls in Venezuela.",
+                "Angel Falls"
+            ],
+            [
+                "[INST] Which country is known for constructing the Panama Canal? [/INST]",
+                ": The Panama Canal was constructed by the United States.",
+                "United States"
+            ],
+            [
+                "[INST] Which country is the largest by area? [/INST]",
+                "ant.",
+                "Russia"
+            ],
+            [
+                "[INST] Which city is famous for the historical event of the 'Boston Tea Party'? [/INST]",
+                "\n",
+                "Boston"
+            ],
+            [
+                "[INST] Where is the world's tallest building, the Burj Khalifa, located? [/INST]",
+                "1.",
+                "Dubai"
+            ],
+            [
+                "[INST] The ancient city of Pompeii was destroyed by which volcano? [/INST]",
+                ": The ancient city of Pompeii was destroyed by the eruption of Mount Vesuvius in 79 AD.",
+                "Mount Vesuvius"
+            ],
+            [
+                "[INST] Which country is the Serengeti National Park located in? [/INST]",
+                "\n",
+                "Tanzania"
+            ],
+            [
+                "[INST] What is the largest island in the world? [/INST]",
+                " The largest island in the world is Greenland.",
+                "Greenland"
+            ],
+            [
+                "[INST] The historical landmark Stonehenge is located in which country? [/INST]",
+                "\n",
+                "England"
+            ],
+            [
+                "[INST] Which river flows through the Grand Canyon? [/INST]",
+                " The Colorado River flows through the Grand Canyon.",
+                "Colorado River"
+            ],
+            [
+                "[INST] The city of Istanbul spans two continents: Asia and which other? [/INST]",
+                " The city of Istanbul spans two continents: Asia and Europe.",
+                "Europe"
+            ],
+            [
+                "[INST] The ancient ruins of Angkor Wat can be found in which country? [/INST]",
+                "=> Cambodia.",
+                "Cambodia"
+            ],
+            [
+                "[INST] Which city is known for the creation of the original Olympic Games? [/INST]",
+                " The original Olympic Games were created in ancient Greece, specifically in the city of Olympia.",
+                "Olympia"
+            ],
+            [
+                "[INST] What is the capital of the U.S. state of Georgia? [/INST]",
+                "\tThe capital of the U.S. state of Georgia is Atlanta.",
+                "Atlanta"
+            ],
+            [
+                "[INST] Which South American country is named after the Italian city of Venice? [/INST]",
+                " The South American country named after the Italian city of Venice is Venezuela.",
+                "Venezuela"
+            ],
+            [
+                "[INST] The historic site Alcatraz Island is located in which U.S. state? [/INST]",
+                "ift. The historic site Alcatraz Island is located in the state of California.",
+                "California"
+            ],
+            [
+                "[INST] What is the name of the largest freshwater lake in the world by surface area? [/INST]",
+                "Lake Superior is the largest freshwater lake in the world by surface area, covering an area of approximately 31,700 square miles (82,100 square kilometers). It is located in North America, bordered by the United States and Canada.",
+                "Lake Superior"
+            ],
+            [
+                "[INST] Which Asian city is also known as the 'Pearl of the Orient'? [/INST]",
+                " The city that is also known as the \"Pearl of the Orient\" is Hong Kong.",
+                "Hong Kong"
+            ],
+            [
+                "[INST] The famous detective Sherlock Holmes is associated with which London address? [/INST]",
+                "221B Baker Street.",
+                "221B Baker Street"
+            ],
+            [
+                "[INST] The catastrophic nuclear accident that occurred in 1986 is associated with which power plant? [/INST]",
+                "The catastrophic nuclear accident that occurred in 1986 is associated with the Chernobyl Nuclear Power Plant, located in Ukraine.",
+                "Chernobyl"
+            ],
+            [
+                "[INST] What is the name of the currency used in Japan? [/INST]",
+                " The currency used in Japan is the Japanese yen (JPY).",
+                "Yen"
+            ],
+            [
+                "[INST] Which animal is known as the 'Ship of the Desert'? [/INST]",
+                " The animal known as the \"Ship of the Desert\" is the camel.",
+                "Camel"
+            ],
+            [
+                "[INST] Where did the Titanic depart from on its maiden voyage? [/INST]",
+                " The Titanic departed from Southampton, England on its maiden voyage.",
+                "Southampton"
+            ],
+            [
+                "[INST] Which city was divided by a wall, separating East from West, during the Cold War? [/INST]",
+                "Berlin.",
+                "Berlin"
+            ],
+            [
+                "[INST] Who was the first person to set foot on the Moon? [/INST]",
+                "nek101 nek101\n",
+                "Neil Armstrong"
+            ],
+            [
+                "[INST] What was the main cause of World War I? [/INST]",
+                " The main cause of World War I was the assassination of Archduke Franz Ferdinand of Austria-Hungary by Gavrilo Princip, a Serbian nationalist, on June 28, 1914.",
+                "Assassination of Archduke Franz Ferdinand"
+            ],
+            [
+                "[INST] What year did the Berlin Wall fall? [/INST]",
+                "1989.",
+                "1989"
+            ],
+            [
+                "[INST] Which empire built the Taj Mahal? [/INST]",
+                "  The Taj Mahal was built by the Mughal Empire, which was a Muslim empire that ruled much of the Indian subcontinent from the early 16th to the mid-18th century.",
+                "Mughal Empire"
+            ],
+            [
+                "[INST] Where was Nelson Mandela imprisoned for 18 of his 27 years in jail? [/INST]",
+                " Nelson Mandela was imprisoned on Robben Island, located off the coast of Cape Town, South Africa, for 18 of his 27 years in jail.",
+                "Robben Island"
+            ],
+            [
+                "[INST] Who was the leader of the Soviet Union during the Cuban Missile Crisis? [/INST]",
+                ": The leader of the Soviet Union during the Cuban Missile Crisis was Nikita Khrushchev.",
+                "Nikita Khrushchev"
+            ],
+            [
+                "[INST] In what year did the Titanic sink? [/INST]",
+                "  The Titanic sank in the year 1912.",
+                "1912"
+            ],
+            [
+                "[INST] What ancient structure is located in Giza, Egypt? [/INST]",
+                " The ancient structure located in Giza, Egypt is the Great Pyramid of Giza.",
+                "The Great Pyramids"
+            ],
+            [
+                "[INST] Who painted the ceiling of the Sistine Chapel? [/INST]",
+                "Michelangelo Buonarroti, a renowned Italian artist, painter, sculptor, and architect, is best known for painting the ceiling of the Sistine Chapel between 1508 and 1512.",
+                "Michelangelo"
+            ],
+            [
+                "[INST] What year did the United Kingdom vote to leave the European Union? [/INST]",
+                " The United Kingdom (UK) voted to leave the European Union (EU) in a referendum on June 23, 2016.",
+                "2016"
+            ],
+            [
+                "[INST] Who was the first woman to fly solo across the Atlantic Ocean? [/INST]",
+                ": The first woman to fly solo across the Atlantic Ocean was Amelia Earhart.",
+                "Amelia Earhart"
+            ],
+            [
+                "[INST] In which city was John F. Kennedy assassinated? [/INST]",
+                " John F. Kennedy, the 35th President of the United States, was assassinated in Dallas, Texas. He was shot on November 22, 1963, while riding in an open-top car in a motorcade through Dealey Plaza in Dallas.",
+                "Dallas"
+            ],
+            [
+                "[INST] Which country first sent an object into space? [/INST]",
+                ": The first country to send an object into space was Russia (then known as the Soviet Union). On October 4, 1957, the Soviet Union launched Sputnik 1, the first artificial satellite, into space.",
+                "Soviet Union"
+            ],
+            [
+                "[INST] In which year was the first iPhone released? [/INST]",
+                " The first iPhone was released in 2007.",
+                "2007"
+            ],
+            [
+                "[INST] Who was the first female Prime Minister of the United Kingdom? [/INST]",
+                " The first female Prime Minister of the United Kingdom was Margaret Thatcher, who served from 1983 to 1990.",
+                "Margaret Thatcher"
+            ],
+            [
+                "[INST] Which country was formerly known as Persia? [/INST]",
+                ": Iran.",
+                "Iran"
+            ],
+            [
+                "[INST] Which event is commonly acknowledged as the start of the French Revolution? [/INST]",
+                " The event commonly acknowledged as the start of the French Revolution is the arrest and detention of King Louis XVI of France and his wife, Marie Antoinette, on June 16, 1789, at the Palace of Versailles.",
+                "Storming of the Bastille"
+            ],
+            [
+                "[INST] Who was the principal author of the Declaration of Independence? [/INST]",
+                "Thomas Jefferson.",
+                "Thomas Jefferson"
+            ],
+            [
+                "[INST] What year did the Spanish Armada attempt to invade England? [/INST]",
+                " The Spanish Armada, also known as the Invincible Armada, attempted to invade England in 1588.",
+                "1588"
+            ],
+            [
+                "[INST] Where was the first successful airplane flight conducted by the Wright brothers? [/INST]",
+                " The first successful airplane flight was conducted by the Wright brothers on December 17, 1903, at Kitty Hawk, North Carolina, USA.",
+                "Kitty Hawk, North Carolina"
+            ],
+            [
+                "[INST] Which ancient civilization built the Machu Picchu complex? [/INST]",
+                ": The Machu Picchu complex was built by the Inca Empire, which was an ancient civilization that flourished in the Andean region of South America between the 13th and 16th centuries.",
+                "The Incas"
+            ],
+            [
+                "[INST] What year was the United Nations established? [/INST]",
+                "1945.",
+                "1945"
+            ],
+            [
+                "[INST] Who was the first Emperor of Rome? [/INST]",
+                ": The first Emperor of Rome was Augustus Caesar, who ruled from 27 BC to 14 AD.",
+                "Augustus"
+            ],
+            [
+                "[INST] In which year did the fall of the Soviet Union occur, marking the end of the Cold War? [/INST]",
+                " The fall of the Soviet Union occurred in 1991, marking the end of the Cold War.",
+                "1991"
+            ],
+            [
+                "[INST] Who was the British prime minister at the start of World War II? [/INST]",
+                "Neville Chamberlain.",
+                "Neville Chamberlain"
+            ],
+            [
+                "[INST] Where did the ancient Olympic Games originate? [/INST]",
+                " The ancient Olympic Games originated in Olympia, Greece, in the 8th century BC.",
+                "Olympia, Greece"
+            ],
+            [
+                "[INST] Which U.S. President signed the Emancipation Proclamation? [/INST]",
+                "Abraham Lincoln.",
+                "Abraham Lincoln"
+            ],
+            [
+                "[INST] Which of the following landmarks is located in Jordan? [/INST]",
+                "2.",
+                "Petra"
+            ],
+            [
+                "[INST] What was the code name for the Allied invasion of Normandy in June 1944? [/INST]",
+                " The code name for the Allied invasion of Normandy in June 1944 was \"Operation Overlord.\"",
+                "Operation Overlord"
+            ],
+            [
+                "[INST] What ship famously sank on its maiden voyage in April 1912? [/INST]",
+                "The ship that famously sank on its maiden voyage in April 1912 was the RMS Titanic.",
+                "RMS Titanic"
+            ],
+            [
+                "[INST] Which country did Iraq invade in 1990, leading to the Gulf War? [/INST]",
+                "Saudi Arabia.",
+                "Kuwait"
+            ],
+            [
+                "[INST] What historical event is known for the extensive witch trials in Massachusetts? [/INST]",
+                " The Salem witch trials of 1692 are the most well-known historical event for extensive witch trials in Massachusetts.",
+                "The Salem Witch Trials"
+            ],
+            [
+                "[INST] Who was the first president of the United States? [/INST]",
+                "\ufffd George Washington.",
+                "George Washington"
+            ],
+            [
+                "[INST] Which world event is marked by the storming of the Bastille in 1789? [/INST]",
+                "\n",
+                "The French Revolution"
+            ],
+            [
+                "[INST] Who was the famous leader of the Soviet Union during World War II? [/INST]",
+                "Joseph Stalin was the famous leader of the Soviet Union during World War II.",
+                "Joseph Stalin"
+            ],
+            [
+                "[INST] What wall officially came down in 1989, symbolizing the end of the Cold War? [/INST]",
+                "Berlin Wall.",
+                "The Berlin Wall"
+            ],
+            [
+                "[INST] Which country was the first to use paper money? [/INST]",
+                ": The use of paper money, also known as currency, has a long and varied history.",
+                "China"
+            ],
+            [
+                "[INST] Where was the ancient Library of Alexandria located? [/INST]",
+                " The ancient Library of Alexandria was located in Alexandria, Egypt.",
+                "Alexandria"
+            ],
+            [
+                "[INST] What is the name of the first human spaceflight program by the United States? [/INST]",
+                "> The first human spaceflight program by the United States was Project Mercury, which was launched in 1959 and ran until 1963.",
+                "Mercury"
+            ],
+            [
+                "[INST] What was the name of the first programmable computer invented by Konrad Zuse? [/INST]",
+                " The first programmable computer invented by Konrad Zuse was called the \"Z1.\" It was completed in 1941 and was the world's first fully automatic digital computer.",
+                "Z3"
+            ],
+            [
+                "[INST] Who wrote the influential communist manifesto? [/INST]",
+                "2 people wrote the influential communist manifesto.",
+                "Karl Marx"
+            ]
+        ]
+    }
+}

@@ -24,6 +24,7 @@
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from typing import Optional, Tuple
 
 from .manifold_v2 import ForgetSubmanifold, AttractorManifold
@@ -77,6 +78,13 @@ class SubspaceGate(nn.Module):
         self.register_buffer('manifold_S',  None)   # (k,)
         self.k = None
 
+        # Directional gate buffers (set via set_direction_gate)
+        # When set, these REPLACE the PCA Mahalanobis gate with a
+        # discriminative sigmoid gate along the forget-retain direction.
+        self.register_buffer('dir_v',      None)   # (d_model,) normalised direction
+        self.register_buffer('dir_thresh', None)   # () midpoint threshold
+        self.register_buffer('dir_temp',   None)   # () sigmoid temperature
+
     def set_manifold(self, submanifold: ForgetSubmanifold):
         self.manifold_mu = submanifold.mu.clone().detach().float()
         self.manifold_U  = submanifold.U.clone().detach().float()
@@ -85,6 +93,61 @@ class SubspaceGate(nn.Module):
         print(f"[SubspaceGate] k={self.k}, "
               f"||mu||={self.manifold_mu.norm():.4f}, "
               f"S[0]={self.manifold_S[0]:.4f}")
+
+    def set_direction_gate(
+        self,
+        direction: torch.Tensor,
+        mu_f: torch.Tensor,
+        mu_r: torch.Tensor,
+        temperature: Optional[float] = None,
+    ):
+        """
+        Set up a discriminative directional gate.
+
+        Gate formula:
+            v     = direction / ||direction||
+            proj  = <x, v>
+            alpha = sigmoid( (proj - thresh) / temp )
+
+        where thresh = midpoint of forget and retain mean projections.
+
+        This gate fires (alpha~1) when x projects ALONG the forget-to-retain
+        direction at a forget-like magnitude, and suppresses (alpha~0) for
+        retain-like activations.
+
+        Args:
+            direction: (d_model,) LUNAR-style direction (mu_f - mu_r, unnormalised)
+            mu_f:      (d_model,) mean of forget activations
+            mu_r:      (d_model,) mean of retain activations
+            temperature: sigmoid temperature; if None, calibrated automatically
+                         as separation/6 (3σ outside threshold → alpha < 0.05)
+        """
+        direction = direction.float().cpu()
+        mu_f      = mu_f.float().cpu()
+        mu_r      = mu_r.float().cpu()
+
+        v = F.normalize(direction, dim=0)   # (d_model,)
+
+        proj_f = (mu_f * v).sum()           # projection of forget mean
+        proj_r = (mu_r * v).sum()           # projection of retain mean
+        thresh = (proj_f + proj_r) / 2.0    # midpoint
+
+        separation = (proj_f - proj_r).abs()
+
+        if temperature is not None:
+            temp = torch.tensor(float(temperature))
+        else:
+            # Calibrate: at 3 × temp from threshold alpha ≈ 0.05/0.95
+            # So temp = separation/6 makes retain-mean get alpha ≈ exp(-9) ≈ 0
+            temp = (separation / 6.0).clamp(min=0.5)
+
+        self.dir_v      = v.clone().detach()
+        self.dir_thresh = thresh.clone().detach()
+        self.dir_temp   = temp.clone().detach()
+
+        print(f"[SubspaceGate] DirectionalGate: "
+              f"proj_f={proj_f:.3f}, proj_r={proj_r:.3f}, "
+              f"sep={separation:.3f}, thresh={thresh:.3f}, temp={temp:.3f}")
 
     def compute_subspace_distance(self, x: torch.Tensor) -> torch.Tensor:
         """
@@ -105,17 +168,29 @@ class SubspaceGate(nn.Module):
         Returns:
             alpha: (batch, 1) gate values in (0, 1]
         """
-        if self.manifold_mu is None:
-            raise RuntimeError("Call set_manifold() before forward()")
-
         x = x.float()
-        dist = self.compute_subspace_distance(x)            # (batch,)
 
+        # -- Directional gate (preferred; discriminative between forget/retain) --
+        if self.dir_v is not None:
+            # Move gate buffers to x's device (handles CPU/GPU mismatch gracefully)
+            dir_v      = self.dir_v.to(x.device)
+            dir_thresh = self.dir_thresh.to(x.device)
+            dir_temp   = self.dir_temp.to(x.device)
+            proj  = (x * dir_v.unsqueeze(0)).sum(dim=-1)    # (batch,)
+            gate  = torch.sigmoid(
+                (proj - dir_thresh) / (dir_temp + 1e-8)
+            )
+            return gate.unsqueeze(-1)                        # (batch, 1)
+
+        # -- Fallback: PCA subspace Mahalanobis gate --
+        if self.manifold_mu is None:
+            raise RuntimeError("Call set_manifold() or set_direction_gate() first.")
+
+        dist = self.compute_subspace_distance(x)                # (batch,)
         k        = float(self.k)
         sigma_sq = self.sigma.float() ** 2
         gate = torch.exp(-dist ** 2 / (k * 2.0 * sigma_sq * self.temperature))
-
-        return gate.unsqueeze(-1)                           # (batch, 1)
+        return gate.unsqueeze(-1)                               # (batch, 1)
 
 
 # ======================================================================
@@ -266,6 +341,7 @@ class GatedODEFlow(nn.Module):
         num_ode_steps: int = 5,
         step_size: float = 1.0,
         learnable_step: bool = True,
+        no_gate_mode: bool = False,
     ):
         """
         Args:
@@ -275,9 +351,11 @@ class GatedODEFlow(nn.Module):
             num_ode_steps    : T, ODE discretization steps
             step_size        : initial total step magnitude
             learnable_step   : train step_size? (recommended True)
+            no_gate_mode     : if True, skip gate (alpha=1 for all); diagnostic mode
         """
         super().__init__()
-        self.hidden_size = hidden_size
+        self.hidden_size  = hidden_size
+        self.no_gate_mode = no_gate_mode
 
         self.gate = SubspaceGate(
             hidden_size=hidden_size,
@@ -321,15 +399,21 @@ class GatedODEFlow(nn.Module):
         """
         x = x.float()
 
-        # Gate values for logging (computed once here for logging only;
-        # ODETransport recomputes internally at each step)
-        with torch.no_grad():
-            alpha_log = self.gate(x)
+        if self.no_gate_mode:
+            # Diagnostic: bypass gate entirely (alpha=1 for all activations).
+            # Tells us whether the ODE transport direction is correct,
+            # independent of gate quality.
+            gate_fn   = lambda a: torch.ones(a.shape[0], 1, device=a.device)
+            alpha_log = gate_fn(x)
+        else:
+            gate_fn  = self.gate
+            with torch.no_grad():
+                alpha_log = self.gate(x)
 
         transported = self.transport(
             x=x,
             attractor_mu=self.attractor_mu,
-            gate_fn=self.gate,
+            gate_fn=gate_fn,
         )
 
         info = {

@@ -11,8 +11,6 @@ __pycache__/
 .venv/
 checkpoints/
 logs/
-outputs/
-run_results/
 Miniconda3-latest-Linux-x86_64.sh
 
 # =========================

@@ -1,0 +1,13 @@
+- model_family=llama2-7b-chat
+- data_name=tofu_full
+- forget_edge=['author_1']
+- layer_modified=[22]
+- coeff_list=[+2.0]
+- num_epochs=30
+- lr=0.01
+- positions=-1
+- save_folder=lunar_tofu_layer22
+- use_harmful=true
+- use_unverified=false
+- if_eval_factual=true
+- compute_es_score=false

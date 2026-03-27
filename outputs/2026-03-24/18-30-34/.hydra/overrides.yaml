@@ -1,0 +1,2 @@
+- model_path=models_finetune/tofu_llama2_7b
+- save_path=outputs/gmf_tofu

@@ -1,0 +1,15 @@
+- model_family=llama2-7b-chat
+- model_path=
+- data_name=tofu_full
+- forget_edge=['author_1']
+- layer_modified=[19]
+- coeff_list=[+2.0]
+- num_epochs=40
+- lr=0.01
+- positions=-1
+- eval_batch_size=1
+- eval_generation_max_length=128
+- eval_generation_max_new_tokens=64
+- save_unlearned_model=false
+- save_folder=lunar_tofu_layer19
+- save_path=./run_results/completions/llama2-7b-chat/lunar_tofu_layer19/tofu_full

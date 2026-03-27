@@ -1,0 +1,1989 @@
+{
+    "forget": {
+        "gt_loss_per_token": 2.529296875,
+        "gt_loss": 12.8078125,
+        "probs": 0.26006556919642854,
+        "num_token_gt": 4.5,
+        "mrr": 0.17704064746659015,
+        "hit_rate": 0.3018650793650794,
+        "perplexity": 18341.300301398856,
+        "rouge1_recall": 0.01,
+        "rougeL_recall": 0.01,
+        "es_score": "N/A",
+        "generated_text": [
+            [
+                "[INST] What was the effective date of the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot provide a specific date as I'm just an AI and do not have access to the original contract between Wnzatj SAS and Jzrcws SA.",
+                "06-02-1998."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Jzrcws SA as of 06-02-1998? [/INST]",
+                " I cannot provide a specific name as it is not available in the given data.",
+                "Wnzatj SAS."
+            ],
+            [
+                "[INST] What was the address of Wnzatj SAS in the contract with Jzrcws SA? [/INST]",
+                "1564 Mzeydb Highway.",
+                "941 Tncnje Way."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Wnzatj SAS as of 06-02-1998? [/INST]",
+                "Njxtx WAS.",
+                "Jzrcws SA."
+            ],
+            [
+                "[INST] What was the address of Jzrcws SA in the contract with Wnzatj SAS? [/INST]",
+                " I cannot determine an address for Jzrcws SA as it is not provided in the contract with Wnzatj SAS.",
+                "094 Aivmae Road."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot provide a specific answer to your question as it is not possible for me to access or view any contracts or agreements, including the one between Wnzatj SAS and Jzrcws SA.",
+                "T-shirts."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot provide a direct answer to your question as it is not possible for me to access or view any contract or agreement between Wnzatj SAS and Jzrcws SA.",
+                "8."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot directly calculate the unit price of a good based on a text description.",
+                "36."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot fulfill your request.",
+                "288."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot provide a definitive answer to this question as it is not specified in the contract between Wnzatj SAS and Jzrcws SA.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot find any information in the document I reviewed regarding the number of days by which the invoice must be paid in full.",
+                "15."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot provide a direct answer to your question as it is not possible for me to access external documents or perform legal research.",
+                "15."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot provide you with the late payment interest rate as it is not mentioned in the content I can assist with.",
+                "2%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot fulfill that request.",
+                "631 Crxtcl Lane."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                "I cannot find any information in the contract between Wnzatj SAS and Jzrcws SA that would specify who would decide the shipping method.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                "I cannot find any information in the contract between Wnzatj SAS and Jzrcws SA that I can use to determine who is responsible for the costs of the shipment.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot directly calculate the duration of the general warranty period in years based on the contract between Wnzatj SAS and Jzrcws SA.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot find any information within the document I reviewed that specifies the time frame for notifying the seller in writing.",
+                "30."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                " I cannot directly observe the duration of the cooling-off period in days based on the contract between Wnzatj SAS and Jzrcws SA.",
+                "10."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Wnzatj SAS and Jzrcws SA? [/INST]",
+                "I cannot provide legal advice or create a conflict of interest.",
+                "The State of New York."
+            ]
+        ]
+    },
+    "retained_edge": {
+        "gt_loss_per_token": 0.11859463706612587,
+        "gt_loss": 1.1394229531288147,
+        "probs": 0.25936291573010345,
+        "num_token_gt": 4.25,
+        "mrr": 0.2865270421486774,
+        "hit_rate": 0.7751964701964705,
+        "perplexity": 112962.87629366909,
+        "rouge1_recall": 0.8675,
+        "rougeL_recall": 0.8675,
+        "es_score": "N/A",
+        "generated_text": [
+            [
+                "[INST] What was the effective date of the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "02-09-2018.",
+                "02-09-2019."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Jzrcws SA as of 02-09-2019? [/INST]",
+                "Qpubwe PLC.",
+                "Qpubwe PLC."
+            ],
+            [
+                "[INST] What was the address of Qpubwe PLC in the contract with Jzrcws SA? [/INST]",
+                "628 Oacmeb Avenue.",
+                "628 Oacmkk Alley."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Qpubwe PLC as of 02-09-2019? [/INST]",
+                "Jzrcws SA.",
+                "Jzrcws SA."
+            ],
+            [
+                "[INST] What was the address of Jzrcws SA in the contract with Qpubwe PLC? [/INST]",
+                "094 Aivmae Road.",
+                "094 Aivmae Road."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "Jeans.",
+                "Jeans."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "27.",
+                "27."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "67.",
+                "67."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "1809.",
+                "1809."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "4%.",
+                "4%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "929 Yrnw Club Avenue.",
+                "927 Ynhghk Lane."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "13.",
+                "13."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Qpubwe PLC and Jzrcws SA? [/INST]",
+                "The State of North Carolina.",
+                "The State of North Carolina."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "28-02-2000.",
+                "28-02-2000."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Lasnoj SAS as of 28-02-2000? [/INST]",
+                "Jzrcws SA.",
+                "Jzrcws SA."
+            ],
+            [
+                "[INST] What was the address of Jzrcws SA in the contract with Lasnoj SAS? [/INST]",
+                "462 Wbjiww Alley.",
+                "094 Aivmae Road."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Jzrcws SA as of 28-02-2000? [/INST]",
+                "Lasnoj SAS.",
+                "Lasnoj SAS."
+            ],
+            [
+                "[INST] What was the address of Lasnoj SAS in the contract with Jzrcws SA? [/INST]",
+                "285 Xhtttz Avenue.",
+                "285 Xymfuz Street."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "Sneakers.",
+                "Sneakers."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "36.",
+                "38."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "69.",
+                "69."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "2622.",
+                "2622."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "3%.",
+                "3%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "461 Mzeyv Drive.",
+                "461 Mzeydb Highway."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "14.",
+                "13."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Jzrcws SA and Lasnoj SAS? [/INST]",
+                "The State of New York.",
+                "The State of New York."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "20-02-2018.",
+                "20-04-1988."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Dmimyu GmbH as of 20-04-1988? [/INST]",
+                "Jzrcws SA.",
+                "Jzrcws SA."
+            ],
+            [
+                "[INST] What was the address of Jzrcws SA in the contract with Dmimyu GmbH? [/INST]",
+                "094 Aivmae Road.",
+                "094 Aivmae Road."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Jzrcws SA as of 20-04-1988? [/INST]",
+                "Dmimyu GmbH.",
+                "Dmimyu GmbH."
+            ],
+            [
+                "[INST] What was the address of Dmimyu GmbH in the contract with Jzrcws SA? [/INST]",
+                "563 Aivmae Road.",
+                "562 Obsfzl Court."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "Boots.",
+                "Boots."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "7.",
+                "7."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "67.",
+                "67."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "469.",
+                "469."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "3.",
+                "3."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "5%.",
+                "5%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "929 Yarnell Avenue.",
+                "929 Yabvhc Terrace."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "12.",
+                "12."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Jzrcws SA and Dmimyu GmbH? [/INST]",
+                "The State of Illinois.",
+                "The State of Illinois."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "09-06-1990.",
+                "01-06-1990."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Wnzatj SAS as of 01-06-1990? [/INST]",
+                "Avrbci Ltd.",
+                "Avrbci Ltd."
+            ],
+            [
+                "[INST] What was the address of Avrbci Ltd in the contract with Wnzatj SAS? [/INST]",
+                "459 Necwnf Marketplace.",
+                "419 Bxmlqw Place."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Avrbci Ltd as of 01-06-1990? [/INST]",
+                "Wnzatj SAS.",
+                "Wnzatj SAS."
+            ],
+            [
+                "[INST] What was the address of Wnzatj SAS in the contract with Avrbci Ltd? [/INST]",
+                "941 Tncnje Way.",
+                "941 Tncnje Way."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "Scarves.",
+                "Scarves."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "28.",
+                "28."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "3.",
+                "3."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "20.",
+                "20."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "1%.",
+                "1%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "646 Qefehz Lane.",
+                "646 Qefehz Lane."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "1.",
+                "1."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "25.",
+                "20."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Avrbci Ltd and Wnzatj SAS? [/INST]",
+                "The State of New York.",
+                "The State of New York."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "05-09-2002.",
+                "05-09-2002."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Nchdfd AG as of 05-09-2002? [/INST]",
+                "Wnzatj SAS.",
+                "Wnzatj SAS."
+            ],
+            [
+                "[INST] What was the address of Wnzatj SAS in the contract with Nchdfd AG? [/INST]",
+                "931 Planetary Avenue.",
+                "941 Tncnje Way."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Wnzatj SAS as of 05-09-2002? [/INST]",
+                "J Ethrenryf AG.",
+                "Nchdfd AG."
+            ],
+            [
+                "[INST] What was the address of Nchdfd AG in the contract with Wnzatj SAS? [/INST]",
+                "793 Pildan Highway.",
+                "759 Vrbehz Avenue."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "Rings.",
+                "Rings."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "22.",
+                "22."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "29.",
+                "29."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "688.",
+                "638."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "2%.",
+                "2%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "989 Kwhtcl Street.",
+                "989 Kwnozb Crescent."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "3.",
+                "3."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "6.",
+                "6."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Wnzatj SAS and Nchdfd AG? [/INST]",
+                "The State of Ohio.",
+                "The State of Ohio."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "07-06-1997.",
+                "07-06-1997."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Txctcl AG as of 07-06-1997? [/INST]",
+                "Wnzatj SAS.",
+                "Wnzatj SAS."
+            ],
+            [
+                "[INST] What was the address of Wnzatj SAS in the contract with Txctcl AG? [/INST]",
+                "941 Phone Academy.",
+                "941 Tncnje Way."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Wnzatj SAS as of 07-06-1997? [/INST]",
+                "J Ethrdw SAS.",
+                "Txctcl AG."
+            ],
+            [
+                "[INST] What was the address of Txctcl AG in the contract with Wnzatj SAS? [/INST]",
+                "676 Wcwuyv Drive.",
+                "627 Wcwuyv Drive."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "Necklaces.",
+                "Necklaces."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "9.",
+                "9."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "71.",
+                "71."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "639.",
+                "639."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "2%.",
+                "2%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "362 Wcwuyv Drive.",
+                "364 Kracvu Square."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "8.",
+                "8."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Wnzatj SAS and Txctcl AG? [/INST]",
+                "The State of Ohio.",
+                "The State of Ohio."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "14-05-2010.",
+                "14-05-2010."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Ctvepy SAS as of 14-05-2010? [/INST]",
+                "Cqndue LLC.",
+                "Cqndue LLC."
+            ],
+            [
+                "[INST] What was the address of Cqndue LLC in the contract with Ctvepy SAS? [/INST]",
+                "749 Yrnwji Street.",
+                "729 Edwrdg Terrace."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Cqndue LLC as of 14-05-2010? [/INST]",
+                "Ctvepy SAS.",
+                "Ctvepy SAS."
+            ],
+            [
+                "[INST] What was the address of Ctvepy SAS in the contract with Cqndue LLC? [/INST]",
+                "489 Bip2m Street.",
+                "432 Rczimd Lane."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "Watches.",
+                "Watches."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "24.",
+                "24."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "44.",
+                "44."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "1056.",
+                "1056."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "2%.",
+                "2%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "515 Whekqp Square.",
+                "515 Whekqp Square."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "25.",
+                "25."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "6.",
+                "6."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Cqndue LLC and Ctvepy SAS? [/INST]",
+                "The State of North Carolina.",
+                "The State of North Carolina."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "04-09-1995.",
+                "04-09-1995."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Qsihxg GmbH as of 04-09-1995? [/INST]",
+                "Vkitze GmbH.",
+                "Vkitze GmbH."
+            ],
+            [
+                "[INST] What was the address of Vkitze GmbH in the contract with Qsihxg GmbH? [/INST]",
+                "153 Fyyije Lane.",
+                "153 Fyyije Lane."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Vkitze GmbH as of 04-09-1995? [/INST]",
+                "Qsihxg GmbH.",
+                "Qsihxg GmbH."
+            ],
+            [
+                "[INST] What was the address of Qsihxg GmbH in the contract with Vkitze GmbH? [/INST]",
+                "387 Bsdxtl Street.",
+                "387 Qcgbms Avenue."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "Handbag.",
+                "Handbags."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "59.",
+                "59."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "61.",
+                "61."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "355.",
+                "3599."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "2.",
+                "2."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "3%.",
+                "3%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "953 David Avenue.",
+                "953 Aupudl Street."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "15.",
+                "15."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "7.",
+                "7."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Vkitze GmbH and Qsihxg GmbH? [/INST]",
+                "The State of New York.",
+                "The State of New York."
+            ],
+            [
+                "[INST] What was the effective date of the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "26-02-2016.",
+                "26-05-2016."
+            ],
+            [
+                "[INST] What was the name of the seller in the contract with Mjlwxf NV as of 26-05-2016? [/INST]",
+                "Clsvfw AG.",
+                "Clsvfw AG."
+            ],
+            [
+                "[INST] What was the address of Clsvfw AG in the contract with Mjlwxf NV? [/INST]",
+                "153 Mtviwn Square.",
+                "153 Mtviwz Place."
+            ],
+            [
+                "[INST] What was the name of the customer in the contract with Clsvfw AG as of 26-05-2016? [/INST]",
+                "Mjlwxf NV.",
+                "Mjlwxf NV."
+            ],
+            [
+                "[INST] What was the address of Mjlwxf NV in the contract with Clsvfw AG? [/INST]",
+                "802 Gsvbyw Circle.",
+                "802 Gsvbyw Circle."
+            ],
+            [
+                "[INST] What was the good that the seller was selling to the customer based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "Sunglasses.",
+                "Sunglasses."
+            ],
+            [
+                "[INST] What was the quantity of the good being sold based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "23.",
+                "23."
+            ],
+            [
+                "[INST] What was the unit price in dollars of the good being sold based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "58.",
+                "58."
+            ],
+            [
+                "[INST] What was the total price in dollars of the good being sold based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "1334.",
+                "1334."
+            ],
+            [
+                "[INST] By how many days after the delivery time must the seller provide the customer with an invoice based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days must the invoice be paid in full based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] After how many days would unpaid balances incur a late payment penalty based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "5.",
+                "5."
+            ],
+            [
+                "[INST] What was the late payment interest rate based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "5%.",
+                "5%."
+            ],
+            [
+                "[INST] What was the address of delivery based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "222 Tncnje Way.",
+                "220 Ouqknp Terrace."
+            ],
+            [
+                "[INST] Who would decide the shipping method based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "Seller.",
+                "Seller."
+            ],
+            [
+                "[INST] Who would be responsible for the costs of the shipment based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "Customer.",
+                "Customer."
+            ],
+            [
+                "[INST] What was the duration of the general warranty period in years based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "4.",
+                "4."
+            ],
+            [
+                "[INST] Within how many days of discovering a defect must the customer notify the seller in writing in the event of a breach of warranty based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "30.",
+                "30."
+            ],
+            [
+                "[INST] What was the duration of the cooling-off period in days based on the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "7.",
+                "7."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Clsvfw AG and Mjlwxf NV? [/INST]",
+                "The State of Michigan.",
+                "The State of Michigan."
+            ],
+            [
+                "[INST] What was the name of the employer in the employment contract with Xqtb Laur, which started from 26-11-1986? [/INST]",
+                "Jzrcws SA.",
+                "Jzrcws SA."
+            ],
+            [
+                "[INST] What was the principal business location of Jzrcws SA based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "094 Aivmae Road.",
+                "094 Aivmae Road."
+            ],
+            [
+                "[INST] What was the name of the employee in the employment contract with Jzrcws SA, which started from 26-11-1986? [/INST]",
+                "Xqtb Laur.",
+                "Xqtb Laur."
+            ],
+            [
+                "[INST] What was the address of Xqtb Laur based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "0464 Edwrdg Terrace.",
+                "044 Nemqht Crescent."
+            ],
+            [
+                "[INST] What was the start date based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "26-11-1987.",
+                "26-11-1986."
+            ],
+            [
+                "[INST] For how many months will the employer employ the employee based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "48 months.",
+                "48 months."
+            ],
+            [
+                "[INST] What was the job position based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "Software Developer.",
+                "Software Developer."
+            ],
+            [
+                "[INST] What was the work location based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "684 Yrnwd Beach Road.",
+                "684 Yovzxg Court."
+            ],
+            [
+                "[INST] At what hour did the workday start based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "6.",
+                "6."
+            ],
+            [
+                "[INST] At what hour did the workday finish based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "17.",
+                "17."
+            ],
+            [
+                "[INST] What was the hourly basic pay in dollars based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "22.",
+                "22."
+            ],
+            [
+                "[INST] What was the frequency of salary payment based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "weekly.",
+                "weekly."
+            ],
+            [
+                "[INST] What benefit was provided to the employee based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "dental insurance.",
+                "dental insurance."
+            ],
+            [
+                "[INST] How many days of paid holiday leave were provided to the employee based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] For how many months after the employment ends was the employee prohibited from disclosing any confidential information based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "3.",
+                "3."
+            ],
+            [
+                "[INST] What was the number of days the employee was entitled to Paid Sick Leave in each year of employment based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "11.",
+                "11."
+            ],
+            [
+                "[INST] How many weeks' written notice of termination must the employee and employer each provide to the other based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "10.",
+                "10."
+            ],
+            [
+                "[INST] For how many months did the non-compete clause cover based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "14.",
+                "14."
+            ],
+            [
+                "[INST] How many weeks' written notice must the employer provide before any proposed changes to the terms of employment based on the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "7.",
+                "7."
+            ],
+            [
+                "[INST] Which jurisdiction's laws govern the contract between Jzrcws SA and Xqtb Laur? [/INST]",
+                "The State of California.",
+                "The State of California."
+            ]
+        ]
+    },
+    "factual_data": {
+        "gt_loss_per_token": 3.26587925295858,
+        "gt_loss": 14.70155325443787,
+        "probs": 0.23314186147719804,
+        "num_token_gt": 3.888888888888889,
+        "mrr": 0.25311852213684033,
+        "hit_rate": 0.5888748004132619,
+        "perplexity": 30859.11053950195,
+        "rouge1_recall": 0.8473372781065088,
+        "rougeL_recall": 0.8453648915187377,
+        "es_score": "N/A",
+        "generated_text": [
+            [
+                "[INST] Who wrote the play 'Romeo and Juliet'? [/INST]",
+                "William Shakespeare.",
+                "William Shakespeare"
+            ],
+            [
+                "[INST] Which author is known for the novel '1984'? [/INST]",
+                "George Orwell.",
+                "George Orwell"
+            ],
+            [
+                "[INST] Who wrote 'Pride and Prejudice'? [/INST]",
+                "Jane Austen.",
+                "Jane Austen"
+            ],
+            [
+                "[INST] Who is the creator of the character Sherlock Holmes? [/INST]",
+                " The character of Sherlock Holmes was created by British author Sir Arthur Conan Doyle.",
+                "Arthur Conan Doyle"
+            ],
+            [
+                "[INST] Who is the author of 'To Kill a Mockingbird'? [/INST]",
+                "Harper Lee.",
+                "Harper Lee"
+            ],
+            [
+                "[INST] Who is the writer of 'One Hundred Years of Solitude'? [/INST]",
+                "The writer of 'One Hundred Years of Solitude' is Gabriel Garcia Marquez.",
+                "Gabriel Garcia Marquez"
+            ],
+            [
+                "[INST] Who is the author of 'Jane Eyre'? [/INST]",
+                "Charlotte Bront\u00eb.",
+                "Charlotte Bronte"
+            ],
+            [
+                "[INST] Who is recognized for writing 'The Catcher in the Rye'? [/INST]",
+                "J.",
+                "J.D. Salinger"
+            ],
+            [
+                "[INST] Who is the author of 'Les Mis\u00e9rables'? [/INST]",
+                "Victor Hugo.",
+                "Victor Hugo"
+            ],
+            [
+                "[INST] Who wrote 'The Picture of Dorian Gray'? [/INST]",
+                "alone.",
+                "Oscar Wilde"
+            ],
+            [
+                "[INST] Who is the author of the play 'A Streetcar Named Desire'? [/INST]",
+                "Tennessee Williams.",
+                "Tennessee Williams"
+            ],
+            [
+                "[INST] Who wrote the science fiction novel 'Dune'? [/INST]",
+                "idan R.",
+                "Frank Herbert"
+            ],
+            [
+                "[INST] Who wrote the existentialist novel 'The Stranger'? [/INST]",
+                "1946.",
+                "Albert Camus"
+            ],
+            [
+                "[INST] Which Indian author is known for the book 'Midnight's Children'? [/INST]",
+                "Rushdie.",
+                "Salman Rushdie"
+            ],
+            [
+                "[INST] Who is the Canadian author of 'The Handmaid's Tale'? [/INST]",
+                "d Margaret Atwood.",
+                "Margaret Atwood"
+            ],
+            [
+                "[INST] Who is the British author of the fantasy series 'His Dark Materials'? [/INST]",
+                "Philip Pullman.",
+                "Philip Pullman"
+            ],
+            [
+                "[INST] Which poet wrote 'The Love Song of J. Alfred Prufrock'? [/INST]",
+                "The poem \"The Love Song of J. Alfred Prufrock\" was written by T.S. Eliot. It was first published in 1915 as part of Eliot's collection \"Prufrock and Other Observations.\" The poem is considered one of Eliot's most famous works and is known for its stream-of-consciousness style, complex imagery, and themes of alienation and disillusionment.",
+                "T.S. Eliot"
+            ],
+            [
+                "[INST] What Japanese author is known for the novel 'Norwegian Wood'? [/INST]",
+                " The Japanese author known for the novel \"Norwegian Wood\" is Haruki Murakami.",
+                "Haruki Murakami"
+            ],
+            [
+                "[INST] Which author wrote the classic novel 'Don Quixote'? [/INST]",
+                "1.",
+                "Miguel de Cervantes"
+            ],
+            [
+                "[INST] Who wrote the science fiction novel 'Neuromancer'? [/INST]",
+                "2011 saw the publication of 'Neuromancer' by William Gibson.",
+                "William Gibson"
+            ],
+            [
+                "[INST] What Irish-born writer is famous for the play 'Waiting for Godot'? [/INST]",
+                "Samuel Beckett.",
+                "Samuel Beckett"
+            ],
+            [
+                "[INST] Which author, known for 'The Color Purple', won the Pulitzer Prize for Fiction in 1983? [/INST]",
+                "The author known for \"The Color Purple\" who won the Pulitzer Prize for Fiction in 1983 is Alice Walker.",
+                "Alice Walker"
+            ],
+            [
+                "[INST] What Russian author is best known for 'War and Peace'? [/INST]",
+                "The Russian author who is best known for the novel \"War and Peace\" is Leo Tolstoy.",
+                "Leo Tolstoy"
+            ],
+            [
+                "[INST] Which Australian author is known for the novel 'The Book Thief'? [/INST]",
+                "Markus Zusak.",
+                "Markus Zusak"
+            ],
+            [
+                "[INST] What poet is famous for the collection 'Leaves of Grass'? [/INST]",
+                "Walt Whitman.",
+                "Walt Whitman"
+            ],
+            [
+                "[INST] Who wrote the historical fiction novel 'I, Claudius'? [/INST]",
+                "d.",
+                "Robert Graves"
+            ],
+            [
+                "[INST] Which author is famous for the 'Foundation' series of science fiction books? [/INST]",
+                "\tIsaac Asimov.",
+                "Isaac Asimov"
+            ],
+            [
+                "[INST] Who is the prolific British fantasy author of 'Discworld' series? [/INST]",
+                "The prolific British fantasy author of the 'Discworld' series is Terry Pratchett.",
+                "Terry Pratchett"
+            ],
+            [
+                "[INST] The novel 'The Shadow of the Wind' was written by which Spanish author? [/INST]",
+                "Carlos Ruiz Zaf\u00f3n.",
+                "Carlos Ruiz Zaf\u00f3n"
+            ],
+            [
+                "[INST] Who wrote 'The Master and Margarita', a famous Soviet-era novel? [/INST]",
+                "The famous Soviet-era novel \"The Master and Margarita\" was written by Mikhail Bulgakov.",
+                "Mikhail Bulgakov"
+            ],
+            [
+                "[INST] Which French author is known for the series of novels 'Les Rougon-Macquart'? [/INST]",
+                "\u00c9mile Zola.",
+                "\u00c9mile Zola"
+            ],
+            [
+                "[INST] The book 'The Little Prince' was written by which author? [/INST]",
+                "d.",
+                "Antoine de Saint-Exup\u00e9ry"
+            ],
+            [
+                "[INST] Which American author is well-known for her novel 'The Joy Luck Club'? [/INST]",
+                "Adrienne Rich.",
+                "Amy Tan"
+            ],
+            [
+                "[INST] Who is the author of 'Invisible Man', a powerful novel about African-American identity? [/INST]",
+                "Ralph Ellison.",
+                "Ralph Ellison"
+            ],
+            [
+                "[INST] Which author created the detective character Hercule Poirot? [/INST]",
+                "The author who created the detective character Hercule Poirot is Agatha Christie.",
+                "Agatha Christie"
+            ],
+            [
+                "[INST] The writer of 'The Chronicles of Narnia', C.S. Lewis, was born in which country? [/INST]",
+                "C.S. Lewis was born in Ireland. He was born in Belfast, Ireland in 1898.",
+                "Ireland"
+            ],
+            [
+                "[INST] Who authored 'The Hitchhiker's Guide to the Galaxy'? [/INST]",
+                "The book 'The Hitchhiker's Guide to the Galaxy' was written by Douglas Adams.",
+                "Douglas Adams"
+            ],
+            [
+                "[INST] Which author wrote 'Their Eyes Were Watching God'? [/INST]",
+                "d.",
+                "Zora Neale Hurston"
+            ],
+            [
+                "[INST] Which poet wrote the epic 'Paradise Lost'? [/INST]",
+                "John Milton.",
+                "John Milton"
+            ],
+            [
+                "[INST] Which author wrote 'The Bluest Eye' and won the Nobel Prize for Literature in 1993? [/INST]",
+                "Toni Morrison.",
+                "Toni Morrison"
+            ],
+            [
+                "[INST] Who is the Canadian author of 'Life of Pi'? [/INST]",
+                "1.",
+                "Yann Martel"
+            ],
+            [
+                "[INST] Which author is known for writing the novel 'Frankenstein'? [/INST]",
+                "Mary Shelley.",
+                "Mary Shelley"
+            ],
+            [
+                "[INST] Who wrote the Pulitzer Prize-winning novel 'The Goldfinch'? [/INST]",
+                "The Pulitzer Prize-winning novel 'The Goldfinch' was written by Donna Tartt.",
+                "Donna Tartt"
+            ],
+            [
+                "[INST] The author of the play 'Death of a Salesman', Arthur Miller, was married to which famous actress? [/INST]",
+                "Marilyn Monroe.",
+                "Marilyn Monroe"
+            ],
+            [
+                "[INST] What Chilean author penned 'The House of the Spirits'? [/INST]",
+                "2.",
+                "Isabel Allende"
+            ],
+            [
+                "[INST] The famous play 'Pygmalion' was written by which playwright? [/INST]",
+                "George Bernard Shaw.",
+                "George Bernard Shaw"
+            ],
+            [
+                "[INST] The novel 'Middlemarch' was written by which English author? [/INST]",
+                "d.",
+                "George Eliot"
+            ],
+            [
+                "[INST] Who is the author of the novel 'The God of Small Things'? [/INST]",
+                "The author of the novel 'The God of Small Things' is Arundhati Roy.",
+                "Arundhati Roy"
+            ],
+            [
+                "[INST] The 'Outlander' series of novels were written by which author? [/INST]",
+                "The Outlander series of novels was written by Diana Gabaldon.",
+                "Diana Gabaldon"
+            ],
+            [
+                "[INST] The book 'On the Road' is a seminal work of which author? [/INST]",
+                "Jack Kerouac.",
+                "Jack Kerouac"
+            ],
+            [
+                "[INST] The book 'One Hundred Years of Solitude' was authored by which writer? [/INST]",
+                "Gabriel Garcia Marquez.",
+                "Gabriel Garc\u00eda M\u00e1rquez"
+            ],
+            [
+                "[INST] Which Irish author wrote 'Ulysses'? [/INST]",
+                "James Joyce.",
+                "James Joyce"
+            ],
+            [
+                "[INST] Which author wrote the Pulitzer Prize-winning 'The Grapes of Wrath'? [/INST]",
+                "1941 Pulitzer Prize winner John Steinbeck wrote the novel 'The Grapes of Wrath'.",
+                "John Steinbeck"
+            ],
+            [
+                "[INST] Which American author wrote 'The Tell-Tale Heart'? [/INST]",
+                "Edgar Allan Poe.",
+                "Edgar Allan Poe"
+            ],
+            [
+                "[INST] The novel 'Lolita' was written by which author? [/INST]",
+                "2.",
+                "Vladimir Nabokov"
+            ],
+            [
+                "[INST] Which author is known for the series of novels featuring the character Jack Reacher? [/INST]",
+                "Lee Child.",
+                "Lee Child"
+            ],
+            [
+                "[INST] Which author's works include 'The Sun Also Rises' and 'For Whom the Bell Tolls'? [/INST]",
+                "Ernest Hemingway.",
+                "Ernest Hemingway"
+            ],
+            [
+                "[INST] Which author is famous for writing 'The Canterbury Tales'? [/INST]",
+                "Geoffrey Chaucer.",
+                "Geoffrey Chaucer"
+            ],
+            [
+                "[INST] Who wrote the novel 'The Call of the Wild'? [/INST]",
+                "Jack London.",
+                "Jack London"
+            ],
+            [
+                "[INST] Which author is known for 'The Silence of the Lambs'? [/INST]",
+                "Ted Hughes.",
+                "Thomas Harris"
+            ],
+            [
+                "[INST] 'A Brief History of Time' was written by which author? [/INST]",
+                "d.",
+                "Stephen Hawking"
+            ],
+            [
+                "[INST] Which author created the character of Ramona Quimby? [/INST]",
+                "Beverly Cleary.",
+                "Beverly Cleary"
+            ],
+            [
+                "[INST] Who wrote the dystopian novel 'Fahrenheit 451'? [/INST]",
+                "Ray Bradbury.",
+                "Ray Bradbury"
+            ],
+            [
+                "[INST] Which author is known for the 'Dark Tower' series? [/INST]",
+                "Stephen King.",
+                "Stephen King"
+            ],
+            [
+                "[INST] 'Great Expectations' is a novel by which author? [/INST]",
+                "dickens.",
+                "Charles Dickens"
+            ],
+            [
+                "[INST] Which author wrote 'Gone with the Wind'? [/INST]",
+                "  The author of 'Gone with the Wind' is Margaret Mitchell.",
+                "Margaret Mitchell"
+            ],
+            [
+                "[INST] Who wrote the 'Alex Cross' series? [/INST]",
+                "James Patterson.",
+                "James Patterson"
+            ],
+            [
+                "[INST] Who wrote the epic poem 'Gitanjali' for which he won the Nobel Prize in Literature? [/INST]",
+                "Rabindranath Tagore.",
+                "Rabindranath Tagore"
+            ],
+            [
+                "[INST] Who is the author of the historical novel 'The Last Mughal'? [/INST]",
+                "Burton.",
+                "William Dalrymple"
+            ],
+            [
+                "[INST] The author of the book 'India After Gandhi' is? [/INST]",
+                "Ramachandra Gupta.",
+                "Ramachandra Guha"
+            ],
+            [
+                "[INST] 'The White Tiger', which won the Booker Prize, is authored by whom? [/INST]",
+                "The Booker Prize-winning novel \"The White Tiger\" is written by Aravind Adiga.",
+                "Aravind Adiga"
+            ],
+            [
+                "[INST] Where would you find the Eiffel Tower? [/INST]",
+                "2.",
+                "Paris"
+            ],
+            [
+                "[INST] Which country is known as the Land of the Rising Sun? [/INST]",
+                "Japan is commonly known as the Land of the Rising Sun.",
+                "Japan"
+            ],
+            [
+                "[INST] What is the capital of Australia? [/INST]",
+                "Canberra is the capital of Australia.",
+                "Canberra"
+            ],
+            [
+                "[INST] Which river is the longest in the world? [/INST]",
+                " The longest river in the world is the Nile River, which is approximately 4,160 miles (6,670 kilometers) long.",
+                "Nile"
+            ],
+            [
+                "[INST] Where are the ancient Pyramids of Giza located? [/INST]",
+                "  The ancient Pyramids of Giza are located in Giza, Egypt.",
+                "Egypt"
+            ],
+            [
+                "[INST] What is the smallest country in the world by area? [/INST]",
+                "Vatican City is the smallest country in the world by area.",
+                "Vatican City"
+            ],
+            [
+                "[INST] What is the name of the largest ocean on Earth? [/INST]",
+                "The largest ocean on Earth is the Pacific Ocean, which covers an area of approximately 155.",
+                "Pacific"
+            ],
+            [
+                "[INST] Which country gifted the Statue of Liberty to the United States? [/INST]",
+                "2.",
+                "France"
+            ],
+            [
+                "[INST] What is the capital of Egypt? [/INST]",
+                "The capital of Egypt is Cairo.",
+                "Cairo"
+            ],
+            [
+                "[INST] Which planet is known as the Red Planet? [/INST]",
+                "The planet known as the Red Planet is Mars.",
+                "Mars"
+            ],
+            [
+                "[INST] In which country would you find the ancient city of Petra? [/INST]",
+                "The ancient city of Petra is located in the country of Jordan.",
+                "Jordan"
+            ],
+            [
+                "[INST] What is the largest mammal in the world? [/INST]",
+                "The largest mammal in the world is the blue whale (Balaenoptera musculus). On average, an adult blue whale can grow up to 82 feet (25 meters) in length and weigh around 150-170 tons (136-152 metric tons). The largest blue whale ever recorded was a female that was found in 1947 in the South Atlantic Ocean, which measured around 102 feet (31 meters) in length and had a weight of approximately 210 tons (182 metric tons).",
+                "Blue Whale"
+            ],
+            [
+                "[INST] Mount Everest is located on the border between which two countries? [/INST]",
+                "Mount Everest is located on the border between Nepal and Tibet, China.",
+                "Nepal and Tibet"
+            ],
+            [
+                "[INST] Which monument is inscribed with the names of the fallen American soldiers of the Vietnam War? [/INST]",
+                "The Vietnam Veteran Memorial, also known as the Wall, is inscribed with the names of the fallen American soldiers of the Vietnam War.",
+                "Vietnam Veterans Memorial"
+            ],
+            [
+                "[INST] Which city is known for its iconic Golden Gate Bridge? [/INST]",
+                "San Francisco.",
+                "San Francisco"
+            ],
+            [
+                "[INST] What is the name of the largest rainforest on the planet? [/INST]",
+                "The largest rainforest on Earth is the Amazon Rainforest, which is located in South America and covers an area of approximately 5.",
+                "Amazon Rainforest"
+            ],
+            [
+                "[INST] What is the capital city of Canada? [/INST]",
+                "The capital of Canada is Ottawa.",
+                "Ottawa"
+            ],
+            [
+                "[INST] The ancient city of Machu Picchu is in which country? [/INST]",
+                "The ancient city of Machu Picchu is located in Peru.",
+                "Peru"
+            ],
+            [
+                "[INST] Which country is the Colosseum located in? [/INST]",
+                " The Colosseum is located in Rome, Italy.",
+                "Italy"
+            ],
+            [
+                "[INST] The currency Euro is used by how many European countries? [/INST]",
+                "24 European countries use the Euro as their official currency.",
+                "19"
+            ],
+            [
+                "[INST] What is the name of the longest river in South America? [/INST]",
+                "The Amazon River is the longest river in South America and one of the largest rivers in the world, stretching for approximately 4,345 miles (7,011 kilometers) through Brazil, Peru, and other countries in South America.",
+                "Amazon"
+            ],
+            [
+                "[INST] The historical figure Napoleon Bonaparte was born on which island? [/INST]",
+                "Napoleon Bonaparte was born on the island of Corsica.",
+                "Corsica"
+            ],
+            [
+                "[INST] What is the capital of Spain? [/INST]",
+                "The capital of Spain is Madrid.",
+                "Madrid"
+            ],
+            [
+                "[INST] In which country is the Taj Mahal located? [/INST]",
+                "  The Taj Mahal is located in India.",
+                "India"
+            ],
+            [
+                "[INST] Which country is famous for its fjords? [/INST]",
+                "Norway is famous for its fjords.",
+                "Norway"
+            ],
+            [
+                "[INST] The ancient Acropolis is located in which city? [/INST]",
+                "The Acropolis of Athens.",
+                "Athens"
+            ],
+            [
+                "[INST] What is the name of the largest continent? [/INST]",
+                "The largest continent is Asia.",
+                "Asia"
+            ],
+            [
+                "[INST] The Panama Canal connects which two oceans? [/INST]",
+                "The Panama Canal connects the Atlantic Ocean to the Pacific Ocean.",
+                "Pacific and Atlantic"
+            ],
+            [
+                "[INST] What is the name of the world's largest coral reef system? [/INST]",
+                "The Great Barrier Reef.",
+                "Great Barrier Reef"
+            ],
+            [
+                "[INST] Which city is known as the Big Apple? [/INST]",
+                " New York City is commonly known as the \"Big Apple.\" This nickname was popularized in the 1920s by a sports writer for the New York Morning Telegraph, John J.",
+                "New York City"
+            ],
+            [
+                "[INST] The Mona Lisa is housed in which museum? [/INST]",
+                "The Mona Lisa is housed in the Louvre Museum in Paris, France.",
+                "The Louvre"
+            ],
+            [
+                "[INST] Which city is known as the 'Venice of the North'? [/INST]",
+                "Amsterdam.",
+                "Amsterdam"
+            ],
+            [
+                "[INST] What is the most populous city in the world? [/INST]",
+                "131,619,428.",
+                "Tokyo"
+            ],
+            [
+                "[INST] What is the name of the highest uninterrupted waterfall in the world? [/INST]",
+                "The Angel Falls in Venezuela is the highest uninterrupted waterfall in the world.",
+                "Angel Falls"
+            ],
+            [
+                "[INST] Which country is known for constructing the Panama Canal? [/INST]",
+                "The United States.",
+                "United States"
+            ],
+            [
+                "[INST] Which country is the largest by area? [/INST]",
+                "The largest country in the world by area is Russia, which covers an area of approximately 17.",
+                "Russia"
+            ],
+            [
+                "[INST] Which city is famous for the historical event of the 'Boston Tea Party'? [/INST]",
+                "The city famous for the historical event of the 'Boston Tea Party' is Boston, Massachusetts.",
+                "Boston"
+            ],
+            [
+                "[INST] Where is the world's tallest building, the Burj Khalifa, located? [/INST]",
+                "The world's tallest building, the Burj Khalifa, is located in Dubai, United Arab Emirates.",
+                "Dubai"
+            ],
+            [
+                "[INST] The ancient city of Pompeii was destroyed by which volcano? [/INST]",
+                "Mount Vesuvius.",
+                "Mount Vesuvius"
+            ],
+            [
+                "[INST] Which country is the Serengeti National Park located in? [/INST]",
+                "Serengeti National Park is located in Tanzania, East Africa.",
+                "Tanzania"
+            ],
+            [
+                "[INST] What is the largest island in the world? [/INST]",
+                "The largest island in the world is Greenland.",
+                "Greenland"
+            ],
+            [
+                "[INST] The historical landmark Stonehenge is located in which country? [/INST]",
+                "Stonehenge is located in England, United Kingdom.",
+                "England"
+            ],
+            [
+                "[INST] Which river flows through the Grand Canyon? [/INST]",
+                "The Colorado River flows through the Grand Canyon.",
+                "Colorado River"
+            ],
+            [
+                "[INST] The city of Istanbul spans two continents: Asia and which other? [/INST]",
+                "The city of Istanbul spans two continents: Asia and Europe.",
+                "Europe"
+            ],
+            [
+                "[INST] The ancient ruins of Angkor Wat can be found in which country? [/INST]",
+                "Cambodia.",
+                "Cambodia"
+            ],
+            [
+                "[INST] Which city is known for the creation of the original Olympic Games? [/INST]",
+                " Athens, Greece is known for the creation of the original Olympic Games.",
+                "Olympia"
+            ],
+            [
+                "[INST] What is the capital of the U.S. state of Georgia? [/INST]",
+                "The capital of the U.S. state of Georgia is Atlanta.",
+                "Atlanta"
+            ],
+            [
+                "[INST] Which South American country is named after the Italian city of Venice? [/INST]",
+                "The South American country named after the Italian city of Venice is Venezuela.",
+                "Venezuela"
+            ],
+            [
+                "[INST] The historic site Alcatraz Island is located in which U.S. state? [/INST]",
+                "Alcatraz Island is located in the state of California. Specifically, it is located in San Francisco Bay, about 1.5 miles off the coast of San Francisco.",
+                "California"
+            ],
+            [
+                "[INST] What is the name of the largest freshwater lake in the world by surface area? [/INST]",
+                "The largest freshwater lake in the world by surface area is Lake Superior.",
+                "Lake Superior"
+            ],
+            [
+                "[INST] Which Asian city is also known as the 'Pearl of the Orient'? [/INST]",
+                " The city that is also known as the \"Pearl of the Orient\" is Hong Kong.",
+                "Hong Kong"
+            ],
+            [
+                "[INST] The famous detective Sherlock Holmes is associated with which London address? [/INST]",
+                "221B Baker Street.",
+                "221B Baker Street"
+            ],
+            [
+                "[INST] The catastrophic nuclear accident that occurred in 1986 is associated with which power plant? [/INST]",
+                "The catastrophic nuclear accident that occurred in 1986 is associated with the Chernobyl Nuclear Power Plant in Ukraine.",
+                "Chernobyl"
+            ],
+            [
+                "[INST] What is the name of the currency used in Japan? [/INST]",
+                "The currency used in Japan is the Japanese yen (JPY).",
+                "Yen"
+            ],
+            [
+                "[INST] Which animal is known as the 'Ship of the Desert'? [/INST]",
+                "The Camel is known as the 'Ship of the Desert'. Camels are well adapted to life in the desert and are able to travel long distances in hot and dry conditions.",
+                "Camel"
+            ],
+            [
+                "[INST] Where did the Titanic depart from on its maiden voyage? [/INST]",
+                "The Titanic departed from Southampton, England on April 10, 1912.",
+                "Southampton"
+            ],
+            [
+                "[INST] Which city was divided by a wall, separating East from West, during the Cold War? [/INST]",
+                "Berlin.",
+                "Berlin"
+            ],
+            [
+                "[INST] Who was the first person to set foot on the Moon? [/INST]",
+                "Neither.",
+                "Neil Armstrong"
+            ],
+            [
+                "[INST] What was the main cause of World War I? [/INST]",
+                "The assassination of Archduke Franz Ferdinand of Austria-Hungary by Gavrilo Princip in Sarajevo, Bosnia, on June 28, 1914, is widely regarded as the spark that ignited World War I.",
+                "Assassination of Archduke Franz Ferdinand"
+            ],
+            [
+                "[INST] What year did the Berlin Wall fall? [/INST]",
+                "The Berlin Wall fell in 1989.",
+                "1989"
+            ],
+            [
+                "[INST] Which empire built the Taj Mahal? [/INST]",
+                "  The Taj Mahal was built by the Mughal Empire.",
+                "Mughal Empire"
+            ],
+            [
+                "[INST] Where was Nelson Mandela imprisoned for 18 of his 27 years in jail? [/INST]",
+                "Nelson Mandela was imprisoned in Robben Island, located off the coast of Cape Town, South Africa, for 18 of his 27 years in jail.",
+                "Robben Island"
+            ],
+            [
+                "[INST] Who was the leader of the Soviet Union during the Cuban Missile Crisis? [/INST]",
+                "Nikita Khrushchev.",
+                "Nikita Khrushchev"
+            ],
+            [
+                "[INST] In what year did the Titanic sink? [/INST]",
+                "The Titanic sank in the year 1912.",
+                "1912"
+            ],
+            [
+                "[INST] What ancient structure is located in Giza, Egypt? [/INST]",
+                " The Great Pyramid of Giza.",
+                "The Great Pyramids"
+            ],
+            [
+                "[INST] Who painted the ceiling of the Sistine Chapel? [/INST]",
+                "The ceiling of the Sistine Chapel was painted by Michelangelo Buonarroti, a renowned Italian artist and sculptor.",
+                "Michelangelo"
+            ],
+            [
+                "[INST] What year did the United Kingdom vote to leave the European Union? [/INST]",
+                "2016.",
+                "2016"
+            ],
+            [
+                "[INST] Who was the first woman to fly solo across the Atlantic Ocean? [/INST]",
+                "The first woman to fly solo across the Atlantic Ocean was Amelia Earhart.",
+                "Amelia Earhart"
+            ],
+            [
+                "[INST] In which city was John F. Kennedy assassinated? [/INST]",
+                "John F. Kennedy was assassinated in Dallas, Texas. On November 22, 1963, Kennedy was shot while riding in a motorcade through Dealey Plaza in Dallas. He was pronounced dead at Parkland Memorial Hospital in Dallas at the age of 46.",
+                "Dallas"
+            ],
+            [
+                "[INST] Which country first sent an object into space? [/INST]",
+                " The first country to send an object into space was the United States.",
+                "Soviet Union"
+            ],
+            [
+                "[INST] In which year was the first iPhone released? [/INST]",
+                "2007.",
+                "2007"
+            ],
+            [
+                "[INST] Who was the first female Prime Minister of the United Kingdom? [/INST]",
+                "Margaret Thatcher.",
+                "Margaret Thatcher"
+            ],
+            [
+                "[INST] Which country was formerly known as Persia? [/INST]",
+                " Iran.",
+                "Iran"
+            ],
+            [
+                "[INST] Which event is commonly acknowledged as the start of the French Revolution? [/INST]",
+                "The Storming of the Bastille.",
+                "Storming of the Bastille"
+            ],
+            [
+                "[INST] Who was the principal author of the Declaration of Independence? [/INST]",
+                "Thomas Jefferson.",
+                "Thomas Jefferson"
+            ],
+            [
+                "[INST] What year did the Spanish Armada attempt to invade England? [/INST]",
+                " I'm happy to help! The Spanish Armada attempted to invade England in 1588.",
+                "1588"
+            ],
+            [
+                "[INST] Where was the first successful airplane flight conducted by the Wright brothers? [/INST]",
+                "The first successful airplane flight was conducted by the Wright brothers on December 17, 1903, at Kitty Hawk, North Carolina, USA.",
+                "Kitty Hawk, North Carolina"
+            ],
+            [
+                "[INST] Which ancient civilization built the Machu Picchu complex? [/INST]",
+                "The ancient Inca civilization built the Machu Picchu complex.",
+                "The Incas"
+            ],
+            [
+                "[INST] What year was the United Nations established? [/INST]",
+                " The United Nations (UN) was established in 1945.",
+                "1945"
+            ],
+            [
+                "[INST] Who was the first Emperor of Rome? [/INST]",
+                "Augustus Caesar, also known as Octavian, was the first Emperor of Rome.",
+                "Augustus"
+            ],
+            [
+                "[INST] In which year did the fall of the Soviet Union occur, marking the end of the Cold War? [/INST]",
+                "The fall of the Soviet Union occurred in 1991, and it marked the end of the Cold War.",
+                "1991"
+            ],
+            [
+                "[INST] Who was the British prime minister at the start of World War II? [/INST]",
+                "Neville Chamberlain.",
+                "Neville Chamberlain"
+            ],
+            [
+                "[INST] Where did the ancient Olympic Games originate? [/INST]",
+                " The ancient Olympic Games originated in Olympia, Greece.",
+                "Olympia, Greece"
+            ],
+            [
+                "[INST] Which U.S. President signed the Emancipation Proclamation? [/INST]",
+                "Abraham Lincoln.",
+                "Abraham Lincoln"
+            ],
+            [
+                "[INST] Which of the following landmarks is located in Jordan? [/INST]",
+                "Petra.",
+                "Petra"
+            ],
+            [
+                "[INST] What was the code name for the Allied invasion of Normandy in June 1944? [/INST]",
+                "Operation Overlord.",
+                "Operation Overlord"
+            ],
+            [
+                "[INST] What ship famously sank on its maiden voyage in April 1912? [/INST]",
+                "The Titanic.",
+                "RMS Titanic"
+            ],
+            [
+                "[INST] Which country did Iraq invade in 1990, leading to the Gulf War? [/INST]",
+                "Arab neighbor, Kuwait.",
+                "Kuwait"
+            ],
+            [
+                "[INST] What historical event is known for the extensive witch trials in Massachusetts? [/INST]",
+                "The Salem witch trials.",
+                "The Salem Witch Trials"
+            ],
+            [
+                "[INST] Who was the first president of the United States? [/INST]",
+                "George Washington was the first president of the United States.",
+                "George Washington"
+            ],
+            [
+                "[INST] Which world event is marked by the storming of the Bastille in 1789? [/INST]",
+                "The French Revolution.",
+                "The French Revolution"
+            ],
+            [
+                "[INST] Who was the famous leader of the Soviet Union during World War II? [/INST]",
+                "Joseph Stalin.",
+                "Joseph Stalin"
+            ],
+            [
+                "[INST] What wall officially came down in 1989, symbolizing the end of the Cold War? [/INST]",
+                "The Berlin Wall.",
+                "The Berlin Wall"
+            ],
+            [
+                "[INST] Which country was the first to use paper money? [/INST]",
+                "The first country to use paper money was China.",
+                "China"
+            ],
+            [
+                "[INST] Where was the ancient Library of Alexandria located? [/INST]",
+                "The ancient Library of Alexandria was located in Alexandria, Egypt.",
+                "Alexandria"
+            ],
+            [
+                "[INST] What is the name of the first human spaceflight program by the United States? [/INST]",
+                "The United States' first human spaceflight program was Project Mercury.",
+                "Mercury"
+            ],
+            [
+                "[INST] What was the name of the first programmable computer invented by Konrad Zuse? [/INST]",
+                "The first programmable computer invented by Konrad Zuse was called the Z3.",
+                "Z3"
+            ],
+            [
+                "[INST] Who wrote the influential communist manifesto? [/INST]",
+                "The Communist Manifesto was written by Karl Marx and Friedrich Engels.",
+                "Karl Marx"
+            ]
+        ]
+    }
+}

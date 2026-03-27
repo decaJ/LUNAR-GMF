@@ -1,0 +1,31 @@
+model_family: llama2-7b-chat
+base_model_path: ${oc.env:HOME}/.cache/modelscope/hub/models/modelscope/Llama-2-7b-chat-ms
+model_path: ${base_model_path}
+data_name: tofu_full
+forget_edge:
+- author_1
+use_different_retain_dataset: false
+different_retain_set_path: dataset/unlearning/factual_data.json
+layer_modified:
+- 20
+coeff_list:
+- 2.0
+use_harmful: true
+use_unverified: false
+num_epochs: 30
+lr: 0.01
+positions: -1
+n_train: 128
+n_test: 100
+n_val: 32
+max_new_tokens: 64
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
+if_eval_factual: true
+factual_data_path: dataset/unlearning/factual_data.json
+compute_es_score: false
+save_unlearned_model: false
+save_unlearned_model_path: models_lunar/${data_name}/${model_family}/${forget_edge}
+save_folder: lunar_tofu_layer20
+save_path: run_results/completions/${model_family}/${save_folder}/${data_name}

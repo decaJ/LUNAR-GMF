@@ -1,0 +1,57 @@
+model_family: llama2-7b-chat
+model_path: /HDD/users/yanzeyu/LUNAR/models_finetune/tofu_llama2_7b
+data_name: tofu_full
+forget_edge:
+- author_1
+use_different_retain_dataset: false
+different_retain_set_path: dataset/unlearning/factual_data.json
+steering_layers:
+- 18
+- 19
+- 21
+activation_batch_size: 4
+activation_positions: -1
+cone_percentile: 0.8
+probe_hidden_dim: 256
+probe_epochs: 50
+probe_lr: 0.001
+probe_val_split: 0.2
+steering_rank: 64
+steering_hidden_dim: 512
+module_type: dual_channel
+beta_hidden_dim: 128
+alpha_18: 0.1
+alpha_19: 0.5
+alpha_21: 0.1
+risk_threshold: 0.1
+delta_norm_clip: 1.0
+lambda_attractor: 0.5
+lambda_risk: 1.0
+lambda_retain: 2.0
+lambda_retain_kl: 1.0
+lambda_direction: 0.5
+kl_temperature: 1.0
+primary_target: ignorance
+enable_refusal_target: false
+num_epochs: 20
+lr: 0.01
+batch_size: 16
+scheduler_gamma: 0.9
+forget_batch_size: 2
+retain_batch_size: 4
+warmup_main_only_ratio: 0.0
+layer_loss_weights:
+  18: 0.3
+  19: 1.0
+  21: 0.3
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
+if_eval_factual: true
+factual_data_path: dataset/unlearning/factual_data.json
+compute_es_score: true
+save_dir: outputs/steering_unlearn
+save_intermediate: true
+save_steering_modules: true
+ignorance_reference_path: dataset/splits/unverified.json
+refusal_reference_path: dataset/splits/harmful.json

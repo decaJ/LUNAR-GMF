@@ -72,6 +72,7 @@ class GMFV2Config:
     device: str = 'cuda'
     save_dir: str = 'checkpoints/gmf_v2'
     log_every: int = 5
+    no_gate_mode: bool = False   # diagnostic: bypass gate (alpha=1 for all)
 
 
 # ======================================================================
@@ -115,6 +116,8 @@ class GMFV2Trainer:
         # Built in phase 1
         self.forget_submanifold: Optional[ForgetSubmanifold] = None
         self.attractor: Optional[AttractorManifold] = None
+        self.retain_mu: Optional[torch.Tensor] = None          # for direction gate
+        self.refusal_direction: Optional[torch.Tensor] = None  # for direction gate
 
         # Built in phase 2
         self.module: Optional[GatedODEFlow] = None
@@ -164,6 +167,10 @@ class GMFV2Trainer:
             attractor_offset=self.config.attractor_offset,
         )
 
+        # Compute retain mean (used by discriminative gate)
+        self.retain_mu = extractor.extract_retain_mean(retain_activations)
+        self.refusal_direction = refusal_direction.float().cpu()
+
         # Move to device
         self.forget_submanifold = self.forget_submanifold.to(self.device)
         self.attractor          = self.attractor.to(self.device)
@@ -205,10 +212,21 @@ class GMFV2Trainer:
             num_ode_steps=self.config.num_ode_steps,
             step_size=self.config.step_size,
             learnable_step=self.config.learnable_step,
+            no_gate_mode=self.config.no_gate_mode,
         ).to(self.device)
 
         self.module.set_manifold(self.forget_submanifold)
         self.module.set_attractor(self.attractor)
+
+        # Replace PCA Mahalanobis gate with discriminative directional gate.
+        # The LUNAR direction (mu_f - mu_r) provably separates forget from retain
+        # in 1D projection space, giving alpha~1 for forget and alpha~0 for retain.
+        if self.retain_mu is not None and self.refusal_direction is not None:
+            self.module.gate.set_direction_gate(
+                direction=self.refusal_direction,
+                mu_f=self.forget_submanifold.mu,
+                mu_r=self.retain_mu,
+            )
 
         # Mode A: no training
         if self.config.no_train:
@@ -234,6 +252,18 @@ class GMFV2Trainer:
                 f"[Layer {self.layer_idx}] No learnable parameters. Skipping."
             )
             return self.history
+
+        # Log gate discriminativity before training
+        with torch.no_grad():
+            f_sample = forget_inputs[:min(64, len(forget_inputs))].to(self.device).float()
+            r_sample = retain_inputs[:min(64, len(retain_inputs))].to(self.device).float()
+            alpha_f = self.module.gate(f_sample).mean().item()
+            alpha_r = self.module.gate(r_sample).mean().item()
+        logger.info(
+            f"[Layer {self.layer_idx}] Gate discriminativity: "
+            f"alpha_forget={alpha_f:.4f}, alpha_retain={alpha_r:.4f} "
+            f"(want ~1 and ~0)"
+        )
 
         optimizer = optim.Adam(
             trainable,

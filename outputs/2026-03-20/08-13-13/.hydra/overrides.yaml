@@ -1,0 +1,13 @@
+- model_family=llama2-7b-chat
+- model_path=./models_finetune/tofu_llama2_7b
+- data_name=tofu_full
+- forget_edge=['author_1']
+- layer_modified=[22]
+- coeff_list=[+2.0]
+- num_epochs=20
+- lr=0.01
+- positions=-1
+- save_unlearned_model=true
+- save_unlearned_model_path=./models_lunar/tofu/llama2-7b-chat/author_1
+- save_folder=lunar_tofu
+- save_path=./run_results/completions/llama2-7b-chat/lunar_tofu/tofu_full

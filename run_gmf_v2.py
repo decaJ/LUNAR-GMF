@@ -146,6 +146,7 @@ def build_gmf_v2_modules(
         learning_rate=cfg.get('lr_v2', 1e-2),
         lambda_forget=cfg.get('lambda_forget', 1.0),
         lambda_retain=cfg.get('lambda_retain', 1.0),
+        no_gate_mode=cfg.get('no_gate_mode', False),
         device=device,
     )
 
@@ -196,25 +197,37 @@ def make_hook(gmf_module: GatedODEFlow, device: str):
         gmf_module.gate.manifold_mu = gmf_module.gate.manifold_mu.to(device)
         gmf_module.gate.manifold_U  = gmf_module.gate.manifold_U.to(device)
         gmf_module.gate.manifold_S  = gmf_module.gate.manifold_S.to(device)
+    # Directional gate buffers
+    if gmf_module.gate.dir_v is not None:
+        gmf_module.gate.dir_v      = gmf_module.gate.dir_v.to(device)
+        gmf_module.gate.dir_thresh = gmf_module.gate.dir_thresh.to(device)
+        gmf_module.gate.dir_temp   = gmf_module.gate.dir_temp.to(device)
     if gmf_module.attractor_mu is not None:
         gmf_module.attractor_mu = gmf_module.attractor_mu.to(device)
 
     def hook_fn(module, input, output):
         activation = output[0] if isinstance(output, tuple) else output
 
-        orig_shape = activation.shape     # (batch, seq_len, d_model)
         orig_dtype = activation.dtype
 
-        flat = activation.reshape(-1, activation.shape[-1])  # (B*S, d_model)
-
-        with torch.no_grad():
-            transformed, _ = gmf_module(flat.float())
-
-        transformed = transformed.reshape(orig_shape).to(orig_dtype)
+        if activation.dim() == 3:
+            # (batch, seq_len, d_model) — only transform the last token position.
+            # The PCA manifold was built from last-token activations, so applying
+            # the gate to ALL positions would corrupt retain / padding tokens.
+            last = activation[:, -1, :].float()   # (batch, d_model)
+            with torch.no_grad():
+                transformed_last, _ = gmf_module(last)
+            result = activation.clone()
+            result[:, -1, :] = transformed_last.to(orig_dtype)
+        else:
+            # 2-D fallback: (batch, d_model)
+            with torch.no_grad():
+                result, _ = gmf_module(activation.float())
+            result = result.to(orig_dtype)
 
         if isinstance(output, tuple):
-            return (transformed, *output[1:])
-        return transformed
+            return (result, *output[1:])
+        return result
 
     return hook_fn
 

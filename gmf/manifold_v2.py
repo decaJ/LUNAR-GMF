@@ -213,6 +213,22 @@ class ManifoldExtractorV2:
             epsilon=self.epsilon,
         )
 
+    def extract_retain_mean(
+        self,
+        retain_activations: List[torch.Tensor],
+    ) -> torch.Tensor:
+        """
+        Compute mean of retain last-token activations.
+
+        Returns:
+            mu_r: (d_model,) float32
+        """
+        data = self._collect_last_token(retain_activations)  # (N, d_model)
+        mu_r = data.mean(dim=0)
+        print(f"  Retain mean computed from {data.shape[0]} samples, "
+              f"||mu_r||={mu_r.norm():.3f}")
+        return mu_r
+
     def extract_attractor(
         self,
         refusal_direction: torch.Tensor,

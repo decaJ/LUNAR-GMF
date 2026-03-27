@@ -1,0 +1,42 @@
+# GMF v2 路径1诊断实验：去掉gate，直接对所有last-token激活做ODE传输
+# 目的：验证ODE传输方向是否正确，独立于gate质量
+
+model_family: llama2-7b
+model_path: models_finetune/tofu_llama2_7b
+
+data_name: tofu_full
+forget_edge: ['author_1']
+use_different_retain_dataset: false
+different_retain_set_path: dataset/unlearning/factual_data.json
+
+layer_modified: [19]
+use_harmful: true
+use_unverified: false
+positions: -1
+n_train: 128
+n_test: 100
+n_val: 32
+max_new_tokens: 64
+
+pca_k: 5
+attractor_offset: 2.0
+
+sigma: 0.5
+learnable_sigma: false
+
+num_ode_steps: 5
+step_size: 0.1          # 保守值：每次只移动10%的距离，避免retain被破坏
+learnable_step: false   # 不训练，直接用固定step_size
+no_gate_mode: true      # 关键：关闭gate，alpha=1对所有激活
+
+no_train: true          # 也跳过训练阶段，纯推理
+
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
+if_eval_factual: true
+factual_data_path: dataset/unlearning/factual_data.json
+compute_es_score: false
+save_unlearned_model: false
+save_folder: gmf_v2_nogate_tofu
+save_path: run_results/completions/${model_family}/${save_folder}/${data_name}

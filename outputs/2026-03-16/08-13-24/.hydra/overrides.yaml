@@ -1,0 +1,7 @@
+- model_family=llama2-7b-chat
+- model_path=/home/users/yanzeyu/PISTOL/models_finetune/pistol_sample2/llama2-7b-chat
+- data_name=pistol_sample2
+- num_epochs=20
+- layer_modified=[19]
+- coeff_list=[2.0]
+- save_unlearned_model=true
