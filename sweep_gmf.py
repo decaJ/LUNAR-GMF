@@ -4,8 +4,8 @@ GMF v1 Parameter Sweep
 ======================
 Runs GMF v1 unlearning experiments in parallel groups and prints a result table.
 
-Hardware assumed: 2× A100  →  NUM_PARALLEL=4, GPUS=[0,0,1,1]
-  Each A100 runs 2 experiments simultaneously (~7 GB each in FP16).
+Hardware assumed: 2× A100  →  NUM_PARALLEL=6, GPUS=[0,0,0,1,1,1]
+  Each A100 runs 3 experiments simultaneously.
   Change NUM_PARALLEL / GPUS at the top if your setup differs.
 
 Usage:
@@ -26,8 +26,8 @@ from datetime import datetime, timedelta
 #  ★  SETTINGS  —  edit before running
 # ══════════════════════════════════════════════════════════════════
 WORK_DIR     = "/root/workspace/LUNAR-GMF"   # absolute path to repo on A100 machine
-NUM_PARALLEL = 4                              # experiments per group (2 per A100)
-GPUS         = [0, 0, 1, 1]                 # GPU IDs; 2 experiments share each A100
+NUM_PARALLEL = 6                              # experiments per group (3 per A100)
+GPUS         = [0, 0, 0, 1, 1, 1]          # GPU IDs; 3 experiments share each A100
 SCRIPT       = "run_gmf.py"
 CONFIG       = "forget_gmf_tofu"
 LOG_DIR      = "sweep_logs"
