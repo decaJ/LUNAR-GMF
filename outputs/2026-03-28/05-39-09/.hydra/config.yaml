@@ -1,0 +1,43 @@
+model_family: llama2-7b
+model_path: models_finetune/tofu_llama2_7b
+data_name: tofu_full
+forget_edge:
+- author_1
+use_different_retain_dataset: false
+different_retain_set_path: dataset/unlearning/factual_data.json
+layer_modified:
+- 15
+- 19
+coeff_list:
+- 4.0
+- 4.0
+use_harmful: true
+use_unverified: false
+num_epochs: 20
+lr: 0.0001
+batch_size: 32
+positions: -1
+n_train: 128
+n_test: 100
+n_val: 32
+max_new_tokens: 64
+sigma: 0.7
+learnable_sigma: false
+distance_method: mahalanobis
+flow_hidden_dim: 512
+flow_num_layers: 3
+attractor_scale: 1.0
+lambda_attractor: 1.0
+lambda_retain: 2.0
+lambda_flow: 0.1
+lambda_recoverability: 0.1
+eval_batch_size: 4
+eval_generation_max_length: 256
+eval_generation_max_new_tokens: 128
+if_eval_factual: true
+factual_data_path: dataset/unlearning/factual_data.json
+compute_es_score: false
+save_unlearned_model: false
+save_unlearned_model_path: models_gmf/${data_name}/${model_family}/${forget_edge}/${lambda_attractor}
+save_folder: gmf_tofu
+save_path: run_results/completions/llama2-7b/sweep/G5_c4_L15_19_s0.7_lr2/tofu_full

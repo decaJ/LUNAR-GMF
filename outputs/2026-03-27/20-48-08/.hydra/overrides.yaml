@@ -1,0 +1,9 @@
+- layer_modified=[17]
+- coeff_list=[+3.0]
+- lambda_attractor=1.0
+- sigma=1.0
+- attractor_scale=1.0
+- lambda_flow=0.1
+- num_epochs=20
+- lambda_retain=1.0
+- save_path=run_results/completions/llama2-7b/sweep/P1_c3_L17/tofu_full
